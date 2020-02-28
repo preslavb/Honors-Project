@@ -1,0 +1,24 @@
+title: Start
+tags: 
+colorID: 0
+position: 557,193
+---
+Test 1 sssssssssssssssssssssssdasdadasdwqdeqweqwrasdasdqwxzcsadwqqrrwq
+
+Test 1 sssssssssssssssssssssssdasdadasdwqdeqweqwrasdasdqwxzcsadwqqrrwq
+
+<<setsprite Image 1>> 
+
+[[Go to test 2 |Test2]] 
+===
+title: Test2
+tags: 
+colorID: 0
+position: 960,169
+---
+Test 2 sadsadasdasd
+
+<<setsprite Image 2>> 
+
+[[Go to start |Start ]] 
+===
