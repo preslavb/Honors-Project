@@ -71,7 +71,7 @@ namespace Yarn.Unity {
         public DialogueRunner.StringUnityEvent onLineUpdate;
         public UnityEngine.Events.UnityEvent onLineEnd;
 
-        public UnityEngine.Events.UnityEvent onOptionsStart;
+        public UnityEngine.Events.UnityEvent<Yarn.OptionSet> onOptionsStart;
         public UnityEngine.Events.UnityEvent onOptionsEnd;
 
         public DialogueRunner.StringUnityEvent onCommand;
@@ -154,6 +154,8 @@ namespace Yarn.Unity {
         /// selection.
         public  IEnumerator DoRunOptions (Yarn.OptionSet optionsCollection, IDictionary<string,string> strings, System.Action<int> selectOption)
         {
+            onOptionsStart?.Invoke(optionsCollection);
+            
             // Do a little bit of safety checking
             if (optionsCollection.Options.Length > optionButtons.Count) {
                 Debug.LogWarning("There are more options to present than there are" +
@@ -166,33 +168,35 @@ namespace Yarn.Unity {
             waitingForOptionSelection = true;
 
             currentOptionSelectionHandler = selectOption;
-            
-            foreach (var optionString in optionsCollection.Options) {
-                optionButtons [i].gameObject.SetActive (true);
+
+            foreach (var optionString in optionsCollection.Options)
+            {
+                optionButtons[i].gameObject.SetActive(true);
 
                 // When the button is selected, tell the dialogue about it
-                optionButtons [i].onClick.RemoveAllListeners();
-                optionButtons [i].onClick.AddListener(() => SelectOption(optionString.ID));
+                optionButtons[i].onClick.RemoveAllListeners();
+                optionButtons[i].onClick.AddListener(() => SelectOption(optionString.ID));
 
-                if (strings.TryGetValue(optionString.Line.ID, out var optionText) == false) {
+                if (strings.TryGetValue(optionString.Line.ID, out var optionText) == false)
+                {
                     Debug.LogWarning($"Option {optionString.Line.ID} doesn't have any localised text");
                     optionText = optionString.Line.ID;
                 }
 
-                var unityText = optionButtons [i].GetComponentInChildren<Text> ();
-                if (unityText != null) {
-                    unityText.text = optionText;
+                var unityText = optionButtons[i].GetComponentInChildren<Text>();
+                if (unityText != null)
+                {
+                    unityText.text = optionText.Trim();
                 }
 
-                var textMeshProText = optionButtons [i].GetComponentInChildren<TMPro.TMP_Text> ();
-                if (textMeshProText != null) {
-                    textMeshProText.text = optionText;
+                var textMeshProText = optionButtons[i].GetComponentInChildren<TMPro.TMP_Text>();
+                if (textMeshProText != null)
+                {
+                    textMeshProText.text = optionText.Trim();
                 }
 
                 i++;
             }
-
-            onOptionsStart?.Invoke();
 
             // Wait until the chooser has been used and then removed 
             while (waitingForOptionSelection) {

@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: d27d0026dc9a93546b69799b7fe3650e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Act1-Start-0
+  - Act1-Start-1
+  - Act1-Start-2
+  - Act1-Start-3
+  - Act1-Start-4
+  - Act1-Coffee-5
+  - Act1-Coffee-6
+  - Act1-Coffee-7
+  - Act1-Coffee-8
+  - Act1-Coffee-9
+  - Act1-Coffee-10
+  - Act1-Coffee-11
+  - Act1-EnergyDrink-12
+  - Act1-OpenWindow-13
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
