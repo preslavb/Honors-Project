@@ -18,13 +18,20 @@ public class TextAreaScript : MonoBehaviour
     [SerializeField] private VerticalLayoutGroup _instantiationTarget;
 
     [SerializeField] private DialogueUI _dialogueUi;
+    [SerializeField] private DialogueRunner _dialogueRunner;
     
     private TextMeshProUGUI _currentActiveText;
 
-    private void Start()
+    private float _defaultTextSpeed;
+
+    public bool WaitingForContinue { get; set; }
+
+    private void Awake()
     {
         _dialogueUi.onOptionsStart = new UnityEventOptionSet();
         _dialogueUi.onOptionsStart.AddListener(CreateRequiredOptions);
+
+        _defaultTextSpeed = _dialogueUi.textSpeed;
     }
 
     public void ShrinkText()
@@ -83,5 +90,25 @@ public class TextAreaScript : MonoBehaviour
             Destroy(_dialogueUi.optionButtons[0].transform.parent.gameObject);
 
         _dialogueUi.optionButtons.Clear();
+    }
+
+    public void Continue()
+    {
+        // Check if we're done with the current line
+        if (WaitingForContinue)
+        {
+            _dialogueUi.MarkLineComplete();
+        }
+
+        // Skip to the end of the line
+        else
+        {
+            _dialogueUi.textSpeed = 0;
+        }
+    }
+
+    public void ResetTextSpeed()
+    {
+        _dialogueUi.textSpeed = _defaultTextSpeed;
     }
 }

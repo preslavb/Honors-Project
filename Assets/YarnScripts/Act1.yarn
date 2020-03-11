@@ -1,53 +1,18 @@
 title: Start
 tags: 
 colorID: 0
-position: 333,-313
+position: 822,293
 ---
-Your foot squeezes the break pedal, and with a squeal of the old tires, the car comes to a stop in front of the gas station. You turn off the ignition and the rain immediately starts pooling on the front window. You look at your service watch, and it reads 04:34. You've still got about a 2 hour drive to the small town, and it would be too early to be waking the inhabitants. Plus, you've been driving all night, and your eyes are beginning to disobey.
+The night is quiet. The dissonant song of the Nightingales perched on the trees and blades of grass soothe you. There is a calm blanketed over the lake in front of you, misty and damp.
+You spot a group of fireflies dancing atop the water's surface, their light reflecting off of the clear as glass pool. Their paths form confused but beautiful shapes in the summer air and you notice a pair creep away from their pack to venture off to the other side of the pond.
 
--> ...
+"How are you feeling?"
+->*Say you're admiring the calm while it lasts, treasuring every second.*
+    "Yeah, no, I'm definitely jealous of you right now..." he smirks.
+->*Say you feel uncomfortable in the silence and gloom.*
+    "Come on, it's not all that bad..."
+->*Stay silent*
+    ...
 
-You estimate you have around 3 hours to burn before heading off again. You're in no position to continue driving at this point...
-
-[[ Grab a coffee from the gas station |Coffee ]] 
-[[ Grab an energy drink from the gas station  |EnergyDrink ]] 
-[[ Open the window to get some fresh air |OpenWindow ]] 
-===
-title: Coffee
-tags: 
-colorID: 0
-position: 335,48
----
-<<clear_history TextArea>> 
-
-You press on the door handle of the car and it opens with a creek. As you're exiting the car your foot lands in a pool of water that immediately starts sinking into the shoes and socks underneath. By the time you enter the station you're dripping wet, even though it couldn't have been more than a 10 second walk from the car to the shop. The bell above rings invitingly, to compensate for the clerk at the counter, who doesn't even glance up to greet you. A few isles of various road provisions line the length of the shop. Old ceiling lights hand motionless above, bathing the space in white.
-
--> Continue
-
-You look around and spot a coffee machine in the right corner of the shop. You slot a few coins into the slit and inspect the options.
-
-->Espresso
-    <<set $prefCoffee to "Espresso">>
-->Latte
-    <<set $prefCoffee to "Latte">>
-->Mocha
-    <<set $prefCoffee to "Mocha">>
-->Cappuccino
-    <<set $prefCoffee to "Cappuccino">>
-
-You press on the button that reads "$prefCoffee"
-===
-title: EnergyDrink
-tags: 
-colorID: 0
-position: 555,48
----
-Empty Text
-===
-title: OpenWindow
-tags: 
-colorID: 0
-position: 775,48
----
-Empty Text
+With a loud *blub*, a stone crashes through the surface of the pool and disperses the leftover fireflies.
 ===
