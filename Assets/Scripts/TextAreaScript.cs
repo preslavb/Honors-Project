@@ -22,6 +22,8 @@ public class TextAreaScript : MonoBehaviour
     
     private TextMeshProUGUI _currentActiveText;
 
+    public TextMeshProUGUI CurrentActiveText => _currentActiveText;
+
     private float _defaultTextSpeed;
 
     public bool WaitingForContinue { get; set; }
@@ -30,6 +32,12 @@ public class TextAreaScript : MonoBehaviour
     {
         _dialogueUi.onOptionsStart = new UnityEventOptionSet();
         _dialogueUi.onOptionsStart.AddListener(CreateRequiredOptions);
+        _dialogueUi.getProcessedTextMaxCharacters += () => 
+            CurrentActiveText.textInfo.characterCount;
+
+        _dialogueUi.onLineUpdateCharCount = new DialogueUI.IntUnityEvent();
+        _dialogueUi.onLineUpdateCharCount.AddListener((int maxCharacters) => 
+            CurrentActiveText.maxVisibleCharacters = maxCharacters);
 
         _defaultTextSpeed = _dialogueUi.textSpeed;
     }
@@ -80,7 +88,16 @@ public class TextAreaScript : MonoBehaviour
 
         for (var i = 0; i < optionSet.Options.Length; i++)
         {
-            _dialogueUi.optionButtons.Add(Instantiate(_buttonPrefab, container.transform));
+            var button = Instantiate(_buttonPrefab, container.transform);
+            _dialogueUi.optionButtons.Add(button);
+
+            button.onClick.AddListener(() =>
+            {
+                // When we click the button, we should display the response in the history
+                ShrinkText();
+                AppendText();
+                FillActiveText($"You: {button.GetComponentInChildren<TextMeshProUGUI>().text}");
+            });
         }
     }
 
@@ -95,16 +112,7 @@ public class TextAreaScript : MonoBehaviour
     public void Continue()
     {
         // Check if we're done with the current line
-        if (WaitingForContinue)
-        {
-            _dialogueUi.MarkLineComplete();
-        }
-
-        // Skip to the end of the line
-        else
-        {
-            _dialogueUi.textSpeed = 0;
-        }
+        _dialogueUi.MarkLineComplete();
     }
 
     public void ResetTextSpeed()

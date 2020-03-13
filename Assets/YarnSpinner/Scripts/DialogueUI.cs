@@ -24,6 +24,7 @@ SOFTWARE.
 
 */
 
+using System;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
@@ -36,6 +37,8 @@ namespace Yarn.Unity {
 
     public class DialogueUI : Yarn.Unity.DialogueUIBehaviour
     {
+
+        public class IntUnityEvent: UnityEngine.Events.UnityEvent<int> { }
 
         /// The object that contains the dialogue and the options.
         /** This object will be enabled when conversation starts, and
@@ -69,6 +72,8 @@ namespace Yarn.Unity {
         public UnityEngine.Events.UnityEvent onLineStart;
         public UnityEngine.Events.UnityEvent onLineFinishDisplaying;
         public DialogueRunner.StringUnityEvent onLineUpdate;
+        public IntUnityEvent onLineUpdateCharCount;
+        public Func<int> getProcessedTextMaxCharacters;
         public UnityEngine.Events.UnityEvent onLineEnd;
 
         public UnityEngine.Events.UnityEvent<Yarn.OptionSet> onOptionsStart;
@@ -106,20 +111,34 @@ namespace Yarn.Unity {
                 text = line.ID;
             }
 
-            if (textSpeed > 0.0f) {
-                // Display the line one character at a time
-                var stringBuilder = new StringBuilder ();
+            onLineUpdate?.Invoke(text);
 
-                foreach (char c in text) {
-                    stringBuilder.Append (c);
-                    onLineUpdate?.Invoke(stringBuilder.ToString ());
-                    if (userRequestedNextLine) {
+            yield return new WaitForEndOfFrame();
+
+            if (textSpeed > 0.0f) {
+
+                var targetIndex = 0;
+                var maxCharacters = getProcessedTextMaxCharacters.Invoke();
+
+                float timer = 0;
+
+                while (targetIndex < maxCharacters)
+                {
+                    timer += Time.deltaTime;
+                    targetIndex = Mathf.Clamp(Mathf.RoundToInt(timer / textSpeed), 0, maxCharacters);
+
+                    onLineUpdateCharCount?.Invoke(targetIndex);
+
+                    if (userRequestedNextLine)
+                    {
                         // We've requested a skip of the entire line.
                         // Display all of the text immediately.
-                        onLineUpdate?.Invoke(text);
+                        onLineUpdateCharCount?.Invoke(maxCharacters);
+                        targetIndex = maxCharacters;
                         break;
                     }
-                    yield return new WaitForSeconds (textSpeed);
+
+                    yield return new WaitForEndOfFrame();
                 }
             } else {
                 // Display the entire line immediately if textSpeed <= 0
@@ -174,7 +193,7 @@ namespace Yarn.Unity {
                 optionButtons[i].gameObject.SetActive(true);
 
                 // When the button is selected, tell the dialogue about it
-                optionButtons[i].onClick.RemoveAllListeners();
+                // optionButtons[i].onClick.RemoveAllListeners();
                 optionButtons[i].onClick.AddListener(() => SelectOption(optionString.ID));
 
                 if (strings.TryGetValue(optionString.Line.ID, out var optionText) == false)

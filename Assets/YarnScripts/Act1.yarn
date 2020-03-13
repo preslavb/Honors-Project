@@ -1,18 +1,63 @@
 title: Start
-tags: 
-colorID: 0
-position: 822,293
 ---
 The night is quiet. The dissonant song of the Nightingales perched on the trees and blades of grass soothe you. There is a calm blanketed over the lake in front of you, misty and damp.
 You spot a group of fireflies dancing atop the water's surface, their light reflecting off of the clear as glass pool. Their paths form confused but beautiful shapes in the summer air and you notice a pair creep away from their pack to venture off to the other side of the pond.
 
-"How are you feeling?"
+Jack: "How are you feeling?"     
 ->*Say you're admiring the calm while it lasts, treasuring every second.*
-    "Yeah, no, I'm definitely jealous of you right now..." he smirks.
-->*Say you feel uncomfortable in the silence and gloom.*
-    "Come on, it's not all that bad..."
+    Jack: "Yeah, no, I'm definitely jealous of you right now..." he smirks.
+->*Say you feel uncomfortable in silence.*
+    Jack: "It's not all that bad..."          
 ->*Stay silent*
     ...
 
-With a loud *blub*, a stone crashes through the surface of the pool and disperses the leftover fireflies.
+With a muffled *blub*, a stone crashes through the surface of the pool and disperses the leftover fireflies. You look to the boy standing at the bank with you. His dark skin is outlined by the moonlight reflection coming off the pool. His red and white jersey rustles subtly as he kneels down to grab another rock.
+
+Jack: "It's been a whole month now and they still haven't found him! And I used to think cops were competent!"     
+With a furious wind up, he flings the rock out onto the lake, splashing even further than the last. He looks disappointed, but you're unsure if its the throw or the cops that let him down.
+
+->*Sarcastically tell him to try clearing the lake next time.*
+    He huffs with a smile but clearly doesn't feel any better.
+->*Ask him how he's been handling it.*
+->*Let him speak and don't interrupt.*
+
+Jack: "I'm tired. I can't just sit around and do jack shit while we wait for news! They're saying that it might be an abduction you know! Apparently his mum doesn't think he has it in him to escape from home, says he's too much of a wuss."     
+
+<b>He chucks a final pebble over the lake and then crashes onto the grass. Jack doesn't usually swear so you know this must really be hard on him. The boy had gone missing exactly 30 days ago, and since then there had been no news about it at all. 
+Occasionally, the principal would come into class to assure students that the school was working closely with the investigators to find William and bring him home. Somehow, you doubt that was the case. Mr. Cunningham is an especially vocal proponent of "the obligations of men to society", and Will had never really fit those criteria, especially after the welcome party incident.</b>
+
+Jack: "I'm not waiting anymore. We're gonna find him on our own." He quickly pushes off from the ground and starts gathering his things in his bag.
+
+[[QuestionsForJack1]]
+===
+
+title: QuestionsForJack1
+---
+<<if $askedWhyHeCares is true and $otherDialogue is true>>
+[[AfterQuestions]]
+<<endif>>
+
+->*Ask him why he even cares so much* <<if $askedWhyHeCares is false>>
+    [[WhyHeCares]]
+->*Other Dialogue Option* <<if $otherDialogue is false>>
+    [[OtherDialogueOption]]
+===
+
+title: WhyHeCares
+---
+<<set $askedWhyHeCares to true>>
+He says why he cares.
+[[QuestionsForJack1]]
+===
+
+title: OtherDialogueOption
+---
+<<set $otherDialogue to true>>
+Test the other dialogue option.
+[[QuestionsForJack1]]
+===
+
+title: AfterQuestions
+---
+After questions
 ===
