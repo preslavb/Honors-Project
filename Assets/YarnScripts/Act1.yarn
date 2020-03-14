@@ -23,8 +23,8 @@ With a furious wind up, he flings the rock out onto the lake, splashing even fur
 
 Jack: "I'm tired. I can't just sit around and do jack shit while we wait for news! They're saying that it might be an abduction you know! Apparently his mum doesn't think he has it in him to escape from home, says he's too much of a wuss."     
 
-<b>He chucks a final pebble over the lake and then crashes onto the grass. Jack doesn't usually swear so you know this must really be hard on him. The boy had gone missing exactly 30 days ago, and since then there had been no news about it at all. 
-Occasionally, the principal would come into class to assure students that the school was working closely with the investigators to find William and bring him home. Somehow, you doubt that was the case. Mr. Cunningham is an especially vocal proponent of "the obligations of men to society", and Will had never really fit those criteria, especially after the welcome party incident.</b>
+He chucks a final pebble over the lake and then crashes onto the grass. Jack doesn't usually swear so you know this must really be hard on him. The boy had gone missing exactly 30 days ago, and since then there had been no news about it at all. 
+Occasionally, the principal would come into class to assure students that the school was working closely with the investigators to find William and bring him home. Somehow, you doubt that was the case. Mr. Cunningham is an especially vocal proponent of "the obligations of men to society", and Will had never really fit those criteria, especially after the welcome party incident.
 
 Jack: "I'm not waiting anymore. We're gonna find him on our own." He quickly pushes off from the ground and starts gathering his things in his bag.
 
@@ -37,27 +37,75 @@ title: QuestionsForJack1
 [[AfterQuestions]]
 <<endif>>
 
-->*Ask him why he even cares so much* <<if $askedWhyHeCares is false>>
+->*Ask him why he even cares so much.* <<if $askedWhyHeCares is false>>
     [[WhyHeCares]]
-->*Other Dialogue Option* <<if $otherDialogue is false>>
-    [[OtherDialogueOption]]
+->*Ask what he's planning to do.* <<if $otherDialogue is false>>
+    [[WhatPlan]]
 ===
 
 title: WhyHeCares
 ---
 <<set $askedWhyHeCares to true>>
-He says why he cares.
+
+He gives you a brief look and then immediately returns to arranging his bag. After a few moments he says: <br>Jack: "Well as coach says, never leave a teammate behind."   
 [[QuestionsForJack1]]
 ===
 
-title: OtherDialogueOption
+title: WhatPlan
 ---
 <<set $otherDialogue to true>>
-Test the other dialogue option.
+
+Jack: "I'll ... " he stumbles. His eyes dart around the lake looking for an answer. "We'll figure it out on the way." he finally says.
 [[QuestionsForJack1]]
 ===
 
 title: AfterQuestions
 ---
-After questions
+Finally, he mashes his jacket back into the bag and closes the zipper. "We're going to his house." he says, as he flings it on his back. He looks around for a second to get his bearings and heads off. His speed almost startles you, and it takes a good moment before you realize he's already melting into the darkness of the bank trees.
+
+[[*Yell at him to wait for you!*|FollowJack]]
+===
+
+title: FollowJack
+---
+It takes a good 10 seconds run for you to catch up to the boy. Your build is no match for his athleticism, and even keeping up requires you to half-walk half-jog beside him.
+
+-> *Ask him what exactly he plans on doing after going to his house.*
+
+Jack: "We're going to sneak into his room and find out what happened. There must be something there. The detectives have probably told his mother not to touch the crime scene. It should be relatively untouched since he left... right?" he waivers and looks to you for an answer.
+
+-> *Tell him you'll find what you're looking for.*
+    Jack: "Yeah."
+-> *Tell him it's been a whole month, the room is probably no longer relevant to their investigation and has been cleared up.*
+    He looks down to the ground for a moment, thinking, then raises his head even more determined. "No. There will be something there!"
+
+The path through the woods is well known to Jack, and you make good progress with his abnormal pace. You look up at the sky just in time to catch the first drop of rain. When you look down, Will's house is in front of you. 
+A two story red brick house that had seen too many seasons. The bricks are crumbled and decayed, flaking off and pooling in masses of red dust near the cracked stones that made a passage to the front door. A stair ran diagonally above the entrance, to the second floor windows.
+You notice that one of the windows is boarded up with newspapers. It's hard to tell, but through the gloom, you think you notice the glass missing from the pane.
+A concrete wall about 2.5ft surrounded the property, topped by another 2ft of iron green fence, the paint flaking off to reveal the rusted metal underneath. No spikes or wire adorn the old fence, and you gather it's pretty safe to climb.
+
+"After you..." Jack gestures up at the fence.
+
+[[OptionsForClimbingFence]]
+===
+
+title: OptionsForClimbingFence
+---
+-> *Climb up and over the fence.*
+    [[ClimbOverFence]]
+-> *Tell Jack this is illegal and you shouldn't be doing it.*
+    Jack: "If you don't want to help you can go home! But remember, it's not just my fault Will is missing! I'm going in there to find him, I think we both owe him at least that."
+
+    With that, Jack grabs the iron bars and pulls himself up, then, with a quick twist, he's over the fence and in the small yard in front of the house.
+    [[ClimbOverFence]]
+-> *Peek over the fence to see if there is a guard dog inside <<if $checkedForGuardDog is false>>
+    <<set $checkedForGuardDog to true>>
+
+    You Peak over the fence cautiously. Scanning the ground lining the inside of the concrete wall, you don't see any signs of a dog, or a pan for its food. You turn around and nod at Jack.
+
+    [[OptionsForClimbingFence]]
+===
+
+title: ClimbOverFence
+---
 ===
