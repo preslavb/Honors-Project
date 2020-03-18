@@ -5,6 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using Yarn;
 using Yarn.Unity;
+using Button = UnityEngine.UI.Button;
 
 public class TextAreaScript : MonoBehaviour
 {
@@ -42,6 +43,30 @@ public class TextAreaScript : MonoBehaviour
         _defaultTextSpeed = _dialogueUi.textSpeed;
     }
 
+    private void Update()
+    {
+        int keyPressed = -1;
+        if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.Alpha1)) keyPressed = 1;
+        if (Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown(KeyCode.Alpha2)) keyPressed = 2;
+        if (Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha3)) keyPressed = 3;
+        if (Input.GetKeyDown(KeyCode.Keypad4) || Input.GetKeyDown(KeyCode.Alpha4)) keyPressed = 4;
+        if (Input.GetKeyDown(KeyCode.Keypad5) || Input.GetKeyDown(KeyCode.Alpha5)) keyPressed = 5;
+        if (Input.GetKeyDown(KeyCode.Keypad6) || Input.GetKeyDown(KeyCode.Alpha6)) keyPressed = 6;
+        if (Input.GetKeyDown(KeyCode.Keypad7) || Input.GetKeyDown(KeyCode.Alpha7)) keyPressed = 7;
+        if (Input.GetKeyDown(KeyCode.Keypad8) || Input.GetKeyDown(KeyCode.Alpha8)) keyPressed = 8;
+        if (Input.GetKeyDown(KeyCode.Keypad9) || Input.GetKeyDown(KeyCode.Alpha9)) keyPressed = 9;
+
+        if (keyPressed > 0 && keyPressed <= _dialogueUi.optionButtons.Count)
+        {
+            _dialogueUi.optionButtons[keyPressed - 1].onClick?.Invoke();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Continue();
+        }
+    }
+
     public void ShrinkText()
     {
         foreach (Transform layoutElementTransform in _instantiationTarget.transform)
@@ -54,6 +79,7 @@ public class TextAreaScript : MonoBehaviour
     {
         var textContainer = Instantiate(_textContainerPrefab, _instantiationTarget.transform);
         _currentActiveText = Instantiate(_textPrefab, textContainer.transform);
+        _currentActiveText.maxVisibleCharacters = 0;
 
         var textContainerLayoutElement = textContainer.GetComponent<LayoutElement>();
         var instantiationTargetLayoutElement = _instantiationTarget.GetComponent<LayoutElement>();
@@ -99,6 +125,9 @@ public class TextAreaScript : MonoBehaviour
                 FillActiveText($"You: {button.GetComponentInChildren<TextMeshProUGUI>().text}");
             });
         }
+
+        // Scroll to the bottom of the view
+        GetComponent<ScrollRect>().verticalNormalizedPosition = 0;
     }
 
     public void RemoveOptions()

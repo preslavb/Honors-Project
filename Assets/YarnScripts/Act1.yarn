@@ -80,11 +80,11 @@ Jack: "We're going to sneak into his room and find out what happened. There must
     He looks down to the ground for a moment, thinking, then raises his head even more determined. "No. There will be something there!"
 
 The path through the woods is well known to Jack, and you make good progress with his abnormal pace. You look up at the sky just in time to catch the first drop of rain. When you look down, Will's house is in front of you. 
-A two story red brick house that had seen too many seasons. The bricks are crumbled and decayed, flaking off and pooling in masses of red dust near the cracked stones that made a passage to the front door. A stair ran diagonally above the entrance, to the second floor windows.
+A two story red brick house that's seen too many seasons. The bricks are crumbled and decayed, flaking off and pooling in masses of red dust near the cracked stones that make a passage to the front door, a light hanging above the frame to illuminate the entrance. A stair runs diagonally above it, to the second floor windows.
 You notice that one of the windows is boarded up with newspapers. It's hard to tell, but through the gloom, you think you notice the glass missing from the pane.
-A concrete wall about 2.5ft surrounded the property, topped by another 2ft of iron green fence, the paint flaking off to reveal the rusted metal underneath. No spikes or wire adorn the old fence, and you gather it's pretty safe to climb.
+A concrete wall about 2.5ft surrounds the property, topped by another 2ft of iron green fence, the paint flaking off to reveal the rusted metal underneath. No spikes or wire adorn the old fence, and you gather it's pretty safe to climb.
 
-"After you..." Jack gestures up at the fence.
+Jack: "After you..." Jack gestures up at the fence.
 
 [[OptionsForClimbingFence]]
 ===
@@ -94,6 +94,7 @@ title: OptionsForClimbingFence
 -> *Climb up and over the fence.*
     [[ClimbOverFence]]
 -> *Tell Jack this is illegal and you shouldn't be doing it.*
+    <<set $reluctantToClimb to true>>
     Jack: "If you don't want to help you can go home! But remember, it's not just my fault Will is missing! I'm going in there to find him, I think we both owe him at least that."
 
     With that, Jack grabs the iron bars and pulls himself up, then, with a quick twist, he's over the fence and in the small yard in front of the house.
@@ -101,11 +102,138 @@ title: OptionsForClimbingFence
 -> *Peek over the fence to see if there is a guard dog inside <<if $checkedForGuardDog is false>>
     <<set $checkedForGuardDog to true>>
 
-    You Peak over the fence cautiously. Scanning the ground lining the inside of the concrete wall, you don't see any signs of a dog, or a pan for its food. You turn around and nod at Jack.
+    You peek over the fence cautiously. Scanning the ground lining the inside of the concrete wall, you don't see any signs of a dog, or a pan for its food. You turn around and nod at Jack.
 
     [[OptionsForClimbingFence]]
 ===
 
 title: ClimbOverFence
 ---
+<<if $reluctantToClimb is true>>
+You look up reluctantly at the bars.
+<<endif>>
+
+You know you owe it to Will to find him. The welcome party was a disaster. Jack and Will had just come out of a month long detention, and John, Jack's father and coach, had organized a small party for the rugby team to welcome them back. 
+Jack was the star of the team, and his absence had a huge effect on the performance of the team. In that one month they had fallen so low that the principal threatened revoking their sports scholarships. So his coming back was a good cause for celebration.
+
+Will's return wasn't nearly as celebrated. The kid was scrawny and weak, and he was mostly forced into the team by his mother, who had some hopeless ambitions of making her son "a real, strong man". The coach liked him though, and tried his best at making the kid at least passable.
+
+As is often the case with high-school athletes, they had a lot of friends to invite to the party, and so a gathering that should have been just 15 people turned into a full blown party of 80-plus raving teenagers. In the chaos not much actual celebration was had, just loud drunken stupor. You found yourself invited to that party by some proxy of a proxy of someone on the team.
+
+Sadly, so had Zack, the principal's not-so-well hidden bastard child. And Zack really doesn't like Will. You didn't see the whole thing go down, but you remember breaking through a group of laughing onlookers, and seeing Will cornered by the bully. The scrawny boy's eyes were glazed over, and he was barely holding his stance while Zack was taunting him. He had his back turned to you, and all you could hear was the chant of the crowd yelling "Suck it, Suck it, Suck it...!".
+
+Then Jack broke through the crowd. You'd never seen him look this angry. He lunged at the bully and tackled him to the ground, and he looked ready to kill him. That's when you ran to get the principal and coach.
+
+When you came back with them, it had only gotten worse. Zack was lying on the ground, bloodied and battered, and above him... Will had embraced and was kissing Jack. When they broke away, the look on Jack's face was that of absolute shock. He ran, ramming through the crowd who were now pointing and laughing at both of them. Will staggered and fell to his knees in the middle, then lost consciousness.
+
+A month later, he disappeared.
+
+Determined, you grab the flaking green bars in front of the old house and hoist yourself up. You realize that you've never talked to Jack about it since it happened. 
+<<if $reluctantToClimb is false>>
+The larger boy smiles and follows you up.
+<<endif>>
+
+[[IntoTheCourtyard]]
+===
+
+title: IntoTheCourtyard
+---
+-> *Ask him what happened that night.*
+    You land on the other side of the fence and look at the boy. He doesn't make eye contact.
+    Jack: "Let's talk about it later. Right now we should be quiet."   
+-> *Decide not to pry.*
+
+You move silently through the dirt at the side of the old cracked walkway. A closer look reveals the window is indeed broken and covered with newspapers.
+
+Jack: "There..." he points up to the window. "We should be able to get in through there from the stairs. Follow me." 
+
+Jack proceeds to the stairs, hugging the wall as to not get spotted if someone was to come out of the front door. Slowly and quietly, you make your way up to the window. It's a good 3ft above your head.
+===
+
+title: JumpToTheWindowOptions
+---
+-> *Tell Jack you might not be able to make the jump.*
+    [[GetBoostedByJack]]
+-> *Attempt to jump and grab the edge of the parapet.*
+    You prepare for the jump and just as you're about to lunge, Jack puts a hand on your shoulder.
+    Jack: "Are you sure you're going to be able to jump all the way up there?" he asks. You look back up. You're pretty certain that even if you manage to grab the ledge, you're not going to be able to pull yourself up. You look back at him and shake your head.
+    [[GetBoostedByJack]]
+===
+
+title: GetBoostedByJack
+---
+Jack: "Alright, let's get you up there then." He forms a ladder with his palms for you to step on and waits with his back against the wall.
+
+You put your weight on his arms and push off of the stairs. He flings you so hard upward that you smash your abdomen into the ledge, taking your breath away.
+
+As you're trying to breathe in, you hear the screech of an old hinge. Behind you, the front door entrance swings open, spilling light on the floor that outlines the figure of a small woman standing at the door frame. The world stops and everything goes deathly silent. 
+You see Jack press his back against the wall, lowering himself silently to the ground, his hand over his mouth. You hang limply from the window like an old flag about to give your position away. You feel incredibly foolish and helpless, as your chest starts pulsing rapidly.
+
+The woman looks around the yard and clears her throat, then leans to her side and goes to grab something from her pocket. She finally produces the silhouette of something that can only be a gun.
+
+Woman: "You finally gonna show up!?" she looks around again and takes a step forward.
+
+-> *Stay still exactly where you are and try not to make a sound.*
+-> *Attempt to pull yourself up into the window.*
+    <<set $attemptedToGetUpTheWindow to true>>
+    You put all of your strength into your arms and somehow, you manage to pull yourself up, stopping yourself an inch before crashing face-first into the newspapers. Your heart begins to beat even faster. There's no way to get in without alerting her, and jumping down will make too much noise and immediately give you away. You place a knee underneath you to steady yourself on the parapet.
+
+Woman: "Yeah... I thought not." she reaches up and puts the second item near her mouth. Then you hear the click of a gas lighter. The woman takes a hard drag off her cigarette, then exhales and blows the fire off from the top of the gun-shaped lighter.
+
+Woman: "You always were a wuss." she signs and takes another drag. "Just like your grandfather. I tried everything. I tried to beat it out of you, I tried to encourage you, to teach you by example... even your damn name. <b>William</b>. You were supposed to be William the Conqueror, not "Wee Willy" Jones." 
+She leans back on the door frame and just smokes for a few seconds. You think you hear something that might be either a sob or a chuckle. 
+...
+...
+...
+After a while, she inhales deeply, throws her cigarette in the dirt and straightens out her dress.
+Woman: "Well then... find your own way back." she says, pulling the dangling cord of the light to switch it off. "You can crawl through the window that you broke."
+
+She slams the door and you hear the click of the lock.
+
+<<if $attemptedToGetUpTheWindow is false>>
+You inhale sharply. You hadn't noticed that you've been holding your breath this whole time. With a strong pull, you mount the parapet and sit on it, breathing heavily in panic.
+<<endif>>
+
+A few moments pass until you're finally certain she's gone, then you exchange a look with Jack.
+
+[[AfterBethany]]
+===
+
+title: AfterBethany
+---
+-> *Exclaim you thought she was going to kill you.*
+-> *Ask why the hell a grown woman would be using a gun lighter!?*
+-> *Say that was way too close!*
+
+[[ClimbUpTheWindow]]
+===
+
+title: ClimbUpTheWindow
+---
+Jack: "I know, I was a moment away from tackling her and making a run for it" he says, eyes wide. 
+He composes himself, breathes deeply in and out, then looks back at you. "Come on, we need to get in there. Do you see a way to move those newspapers?"
+
+You look back at the window hole and notice that one corner of the improvised cover has peeled off and hangs loosely. You reach in and touch the side of the frame up and down until you find a metal pin.
+
+-> *Pull the metal pin.*
+
+You pull on the little pin and the wall of paper collapses to one side, revealing a small disorderly room. It's too dark to make out anything right now.
+
+Jack: "Good job! Now help me up there."
+
+Your jump off the frame into the small room, then turn around and hang your hand down for the large boy to grab. He takes a moment to wind up, then jumps up towards you.
+
+You don't anticipate his weight being so much, and immediately buckle down . You feel a pop in your elbow and a shock of pain runs through your whole arm, but you persist and pull the boy up. Finally he grabs the edge of the window and pulls himself the rest of the way up.
+
+You stumble back. That arm will be very sore for the next few days.
+
+When the boy stumbles into the window, you look around the small room. It takes a few moment for your eyes to adjust, but the moon is kind and at least partially lights the environment up through the slit where the newspapers were a moment ago.
+
+Jack raises himself off the floor and dusts off his clothes. "Thanks." he finally manages between breaths. Then he looks around, squinting to adust to the dim light.
+
+Jack: "Wow... she hasn't even touched the place."
+
+-> *Wonder what kind of mother would leave her missing child's room in such a state.*
+    Jack: "Can't say I'm surprised...". You notice a sadness in his voice but you can't tell his expression with the moonlight at his back.
+-> *Say it looks cozy.*
 ===

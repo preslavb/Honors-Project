@@ -30,6 +30,7 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Text;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 namespace Yarn.Unity {
     /// Displays dialogue lines to the player, and sends
@@ -208,9 +209,11 @@ namespace Yarn.Unity {
                     unityText.text = optionText.Trim();
                 }
 
-                var textMeshProText = optionButtons[i].GetComponentInChildren<TMPro.TMP_Text>();
+                var textMeshProIndex = optionButtons[i].GetComponentsInChildren<TMPro.TMP_Text>()[0];
+                var textMeshProText = optionButtons[i].GetComponentsInChildren<TMPro.TMP_Text>()[1];
                 if (textMeshProText != null)
                 {
+                    textMeshProIndex.text = $"{i + 1}.";
                     textMeshProText.text = optionText.Trim();
                 }
 
