@@ -180,7 +180,7 @@ Woman: "You finally gonna show up!?" she looks around again and takes a step for
 
 Woman: "Yeah... I thought not." she reaches up and puts the second item near her mouth. Then you hear the click of a gas lighter. The woman takes a hard drag off her cigarette, then exhales and blows the fire off from the top of the gun-shaped lighter.
 
-Woman: "You always were a wuss." she signs and takes another drag. "Just like your grandfather. I tried everything. I tried to beat it out of you, I tried to encourage you, to teach you by example... even your damn name. <b>William</b>. You were supposed to be William the Conqueror, not "Wee Willy" Jones." 
+Woman: "You always were a wuss." she signs and takes another drag. "Just like your grandfather. I tried everything. I tried to beat it out of you, I tried to encourage you, to teach you by example... even your damn name. <b>William</b>. You were supposed to be William the Conqueror, not "Wee Willy" Johns." 
 She leans back on the door frame and just smokes for a few seconds. You think you hear something that might be either a sob or a chuckle. 
 ...
 ...
@@ -256,27 +256,46 @@ title: SearchTheRoomOptions
 -> *Search the bag for clues.*<<if $searchedBag is false>>
     <<set $searchedBag to true>>
     You bend down and pull on the strap of the bag. The contents spill on the floor and you set aside the empty backpack. You recognize most of the books lying before you. A physics workbook, a maths textbook and other such school items, an old, worn pencil case... but then your eye catches a glint from beneath one of the books.
-    Jack: "Did you find anything?" the boy asks as he leans over you. You move the book aside to reveal a small open bag with dice in it and a slightly crumpled piece of paper.
+    Jack: "Did you find anything?" Jack asks as he leans over you. You move the book aside to reveal a small open bag with dice in it and a slightly crumpled piece of paper.
 
-    Jack: "That's his D&D kit!" he exclaims with visible excitement and goes down on one knee to have a better look. "Last time we were fighting a Beholder" he grins, then looks at you expectantly.
+    Jack: "That's his D&D kit!" he exclaims with visible excitement and goes down on one knee to have a better look. "Oh man... our last session we were fighting a Beholder" he grins, then looks at you expectantly.
 
     -> *Say D&D isn't really your thing.*
     His smile deflates.
     Jack: "Well... you know I used to think it was lame too." he says and sits down with his back to the bed.
     -> *Beholders...? D&D...? You've got no clue what any of that means.*
-    Jack: "Oh man, we should definitely get Will to teach you how to play when we find him, you'll love it! It's not that difficult to learn, it's a game where you basically just say what you want to do, and the person leading the game makes you roll a die to determine whether you succeed. There's rules, sure, but we don't really follow them. I'm pretty sure Millie just rolls the dice for show and never actually looks at them." He chuckles. "I used to think the game was super lame."
+    Jack: "Oh man, we should definitely get Will to teach you how to play when we find him, you'll love it! It's not that difficult to learn, it's a game where you basically just say what you want to do, and the person leading the game makes you roll a die to determine whether you succeed."
+    Jack: "There's rules, sure, but we don't really follow them. I'm pretty sure Millie just rolls the dice for show and never actually looks at them." He chuckles. "I used to think the game was super lame."
     -> *Ask him how they defeated the Beholder.*
-    Jack: "Dude, it was an awesome fight! Will took it out in the end with a natural 20 crit to the eye"
+    Jack: "Dude, it was an awesome fight! Will took it out in the end with a natural 20 crit to the eye. He had this awesome explosive blunderbuss." he points at a section of the character sheet that reads "Blunderbuss (Explosive) +2, 2d8". The writing is neat and orderly. 
+    Jack: "I used to think this game was so lame."
     -> *Tell him you've always wanted to try playing.* 
+    Jack: "Oh man, we should definitely get Will to teach you how to play when we find him, you'll love it! It's not that difficult to learn, it's a game where you basically just say what you want to do, and the person leading the game makes you roll a die to determine whether you succeed."
+    Jack: "There's rules, sure, but we don't really follow them. I'm pretty sure Millie just rolls the dice for show and never actually looks at them." He chuckles. "I used to think the game was super lame."
 
     [[SearchTheRoomOptions.DnD]]
 
--> *Examine the poster.*<<if $examinedPoster is false>>
+-> *Examine the hanging poster.*<<if $examinedPoster is false>>
+    You walk up to the wall and run one hand along the edge of the poster to straighten it out. As the roll unfolds, you're presented with a beautiful painting of a columbus era ship, the shipmates climbing ropes like monkeys, and a dignified captain standing proud next to his helmsman. 
+    Jack: "Oh wow." he inches closer to get a better look. "I knew Will always liked the idea of sailing but I never knew he was this obsessed by it. Look here..." he bends down and picks up a beautiful wooden model of a ship, painted with gold and blue on top of a stand.
+    Jack: "It has an engraving on it as well, see?" he points to a golden plaque secured to the stand. It reads "Charles Johns".
+    Jack: "I think that's his dad's name. He used to wear this striped shirt a lot as well, a blue and white one, like the sailors have. It was a present from his dad as well. He's been out of town for a while now though, and he's not allowed to see Will too much." he puts the figurine down.
+    Jack: "Come on let's get back to it."
     [[SearchTheRoomOptions]]
+
 [[]]
 ===
 
 title: SearchTheRoomOptions.DnD
 ---
+The boy sits down on the ground and puts his back to the bed.
+Jack: "I only started playing cause I was bored. After me and Will got detention for APPARENTLY breaking Zack's arm, they made us clean the storage space down in the basement. They didn't really care to observe us though, so Will just called in Millie and Sam to help us."
+Jack: "Millie's being homeschooled nowadays so she had really nothing better to do, and Sam's already graduated so he mostly just sticks to her. Anyway, we cleared the whole place in like... a day and a half. We still had a whole month to go and nothing to do, so they started organizing a campaign."
+Jack: "It doesn't really work for only three people though, so they wanted me to join. I though I was too cool for that but Millie challenged me to an arm wrestling match, and since I lost that I really didn't have any dignity left anyway."
+Jack: "I was thinking of making a barbarian or something of the sorts, you know one of them strong types, but Will told me that's boring. Ha, I remember, he said: 'you could be anything you want in this game, the whole point is to pretend, but to also stop pretending'. Anyway, I ended up making a girl cleric and yeah, I have to agree it was good fun not having to pretend."
+
+He clears his throat and looks down, pondering something. Then his expression changes back to the gloomy youth you'd come to know.
+Jack: "Anyway enough of that. Let's hurry up, I don't want to linger too long, we might get found out." he stands and moves back to the desk of papers.
+
 [[SearchTheRoomOptions]]
 ===
