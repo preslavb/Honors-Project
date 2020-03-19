@@ -227,13 +227,56 @@ You don't anticipate his weight being so much, and immediately buckle down . You
 
 You stumble back. That arm will be very sore for the next few days.
 
-When the boy stumbles into the window, you look around the small room. It takes a few moment for your eyes to adjust, but the moon is kind and at least partially lights the environment up through the slit where the newspapers were a moment ago.
+When the boy stumbles into the window, you look around the small room. It takes a few moments for your eyes to adjust, but the moon is kind and at least partially lights the environment up through the slit where the newspapers were a moment ago.
 
 Jack raises himself off the floor and dusts off his clothes. "Thanks." he finally manages between breaths. Then he looks around, squinting to adust to the dim light.
 
 Jack: "Wow... she hasn't even touched the place."
 
+After a moment of silence, Jack sighs and steps further into the room. Your eyes begin to adjust to the darkness and shapes begin to immerge one by one. A small bed in the corner, piles of clothes and blankets strewn about in disarray, a desk huddled in the other, wallowing in its own pile of papers and junk.
+
+Jack: "The officers were thorough at least."
+
 -> *Wonder what kind of mother would leave her missing child's room in such a state.*
     Jack: "Can't say I'm surprised...". You notice a sadness in his voice but you can't tell his expression with the moonlight at his back.
+    [[SearchTheRoom]]
 -> *Say it looks cozy.*
+    Jack: "It looks like his mother didn't care about him at all." he says.
+    [[SearchTheRoom]]
+===
+
+title: SearchTheRoom
+---
+Jack: "Come on, let's look around. There's bound to be something here to tip us off" he adds, then starts flipping through the stack of papers on the desk.
+You look around you. A backpack is poking out of the corner of the bed. You also notice a half-torn down poster on the wall.
+===
+
+title: SearchTheRoomOptions
+---
+-> *Search the bag for clues.*<<if $searchedBag is false>>
+    <<set $searchedBag to true>>
+    You bend down and pull on the strap of the bag. The contents spill on the floor and you set aside the empty backpack. You recognize most of the books lying before you. A physics workbook, a maths textbook and other such school items, an old, worn pencil case... but then your eye catches a glint from beneath one of the books.
+    Jack: "Did you find anything?" the boy asks as he leans over you. You move the book aside to reveal a small open bag with dice in it and a slightly crumpled piece of paper.
+
+    Jack: "That's his D&D kit!" he exclaims with visible excitement and goes down on one knee to have a better look. "Last time we were fighting a Beholder" he grins, then looks at you expectantly.
+
+    -> *Say D&D isn't really your thing.*
+    His smile deflates.
+    Jack: "Well... you know I used to think it was lame too." he says and sits down with his back to the bed.
+    -> *Beholders...? D&D...? You've got no clue what any of that means.*
+    Jack: "Oh man, we should definitely get Will to teach you how to play when we find him, you'll love it! It's not that difficult to learn, it's a game where you basically just say what you want to do, and the person leading the game makes you roll a die to determine whether you succeed. There's rules, sure, but we don't really follow them. I'm pretty sure Millie just rolls the dice for show and never actually looks at them." He chuckles. "I used to think the game was super lame."
+    -> *Ask him how they defeated the Beholder.*
+    Jack: "Dude, it was an awesome fight! Will took it out in the end with a natural 20 crit to the eye"
+    -> *Tell him you've always wanted to try playing.* 
+
+    [[SearchTheRoomOptions.DnD]]
+
+-> *Examine the poster.*<<if $examinedPoster is false>>
+    [[SearchTheRoomOptions]]
+[[]]
+===
+
+title: SearchTheRoomOptions.DnD
+---
+[[SearchTheRoomOptions]]
 ===
