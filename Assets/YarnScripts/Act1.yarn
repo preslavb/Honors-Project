@@ -276,21 +276,22 @@ title: SearchTheRoomOptions
     [[SearchTheRoomOptions.DnD]]
 
 -> *Examine the hanging poster.*<<if $examinedPoster is false>>
+    <<set $examinedPoster to true>>
     You walk up to the wall and run one hand along the edge of the poster to straighten it out. As the roll unfolds, you're presented with a beautiful painting of a columbus era ship, the shipmates climbing ropes like monkeys, and a dignified captain standing proud next to his helmsman. 
-    Jack: "Oh wow." he inches closer to get a better look. "I knew Will always liked the idea of sailing but I never knew he was this obsessed by it. Look here..." he bends down and picks up a beautiful wooden model of a ship, painted with gold and blue on top of a stand.
-    Jack: "It has an engraving on it as well, see?" he points to a golden plaque secured to the stand. It reads "Charles Johns".
-    Jack: "I think that's his dad's name. He used to wear this striped shirt a lot as well, a blue and white one, like the sailors have. It was a present from his dad as well. He's been out of town for a while now though, and he's not allowed to see Will too much." he puts the figurine down.
-    Jack: "Come on let's get back to it."
+    Jack: "Oh wow." Jack inches closer to get a better look. "I knew Will always liked the idea of sailing but I never knew he was this obsessed by it. Look here..." he bends down and picks up a beautiful wooden model of a ship, painted with gold and blue on top of a stand.
+    Jack: "He used to bring this to our D&D sessions. His character was captain of the 'Liberta'. He absolutely loves this boat." he points to a golden plaque secured to the stand. It reads "Charles Johns".
+    Jack: "I think that's his dad's name. He used to be a sailor if I remember correctly. Will used to wear this striped shirt a lot as well, a blue and white one, like the sailors have. That was a present from his dad too. He's been out of town for a while now though, and I don't think he's allowed to see Will too much." he puts the figurine down.
+    Jack: "Come on let's get back to it." Then he returns to the pile of documents on the desk.
     [[SearchTheRoomOptions]]
 
-[[]]
+[[SearchTheRoom.FindMilitarySchoolLetter]]
 ===
 
 title: SearchTheRoomOptions.DnD
 ---
 The boy sits down on the ground and puts his back to the bed.
 Jack: "I only started playing cause I was bored. After me and Will got detention for APPARENTLY breaking Zack's arm, they made us clean the storage space down in the basement. They didn't really care to observe us though, so Will just called in Millie and Sam to help us."
-Jack: "Millie's being homeschooled nowadays so she had really nothing better to do, and Sam's already graduated so he mostly just sticks to her. Anyway, we cleared the whole place in like... a day and a half. We still had a whole month to go and nothing to do, so they started organizing a campaign."
+Jack: "Millie's being home schooled nowadays so she had really nothing better to do, and Sam's already graduated so he mostly just sticks to her. Anyway, we cleared the whole place in like... a day and a half. We still had a whole month to go and nothing to do, so they started organizing a campaign."
 Jack: "It doesn't really work for only three people though, so they wanted me to join. I though I was too cool for that but Millie challenged me to an arm wrestling match, and since I lost that I really didn't have any dignity left anyway."
 Jack: "I was thinking of making a barbarian or something of the sorts, you know one of them strong types, but Will told me that's boring. Ha, I remember, he said: 'you could be anything you want in this game, the whole point is to pretend, but to also stop pretending'. Anyway, I ended up making a girl cleric and yeah, I have to agree it was good fun not having to pretend."
 
@@ -298,4 +299,151 @@ He clears his throat and looks down, pondering something. Then his expression ch
 Jack: "Anyway enough of that. Let's hurry up, I don't want to linger too long, we might get found out." he stands and moves back to the desk of papers.
 
 [[SearchTheRoomOptions]]
+===
+
+title: SearchTheRoom.FindMilitarySchoolLetter
+---
+Jack: "Whoa... Come take a look at this will you" he beckons to you without turning. When you approach, he hands you a torn envelope with a letter inside.
+Jack: "The text I can't read at this light, but that logo I know." he points to the emblem painted on the envelope. "That's the military school that came to recruit two months ago."
+
+You move to the window, where more of the moon's light can shine through the leftover scraps of newspaper. You carefully open the envelope and take out the letter. Jack leans from behind you to read along.
+<i>Dear Mrs. Johns, <br><br>We applaud you for your patriotism and devotion to America in offering your son the prestigious opportunity to learn and serve at our Grimshaw Military Academy. We can assure you that your son, William C. Johns, will receive the absolute top class military training at our institution. <br><br>We are writing to inform you that the academy takes all recruits aged 16 and older, regardless of skill or talent.</i> 
+
+<i>The rigorous training they receive will adequately prepare them for their service in the name of Freedom, and we can assure you that your previously mentioned worries over the inappropriate attitudes your son exhibits will be entirely eradicated through discipline.</i>
+
+<i>Finally, as stated on our website's front page, the academy does not take responsibility for the unfortunate passing of recruits Ford and Gilles, and thus, this occurrence should not be considered precedent for our code of conduct. The reports of the recruits's malnutrition and overexertion are entirely unfounded, and we are working tirelessly to prevent further spread of such misinformation.</i> 
+
+<i>You are welcome to visit my office to discuss young William's recruitment further, and I hope to hear from you very soon. <br><br>Regards,<br><br>Mr. Beneke, Senior Advisor at Grimshaw Military Academy</i>
+
+Jack takes the letter from your hand once you're done and reads it again aloud. You see his expression curdle and once he's done, he crushes the paper and throws it out the window.
+
+Jack: "Bitch!" he exclaims a little bit too loudly.
+
+-> *Ask why she would send her son to a place like that.*
+-> *Say it's not so bad and that maybe it's for the best.*
+    The boy looks daggers at you.
+    Jack: "Will won't survive a week at a place like that. She's gonna kill him!"
+-> *Keep silent.*
+
+He starts pacing the room.
+Jack: "He told me about her, that she was terrible and cruel but like... this is insane!" he puts his hands up on his temples and closes his eyes. "She always wanted him to be "strong" and put all that pressure on him, he told me so! Yes, she used to be in the military! Oh no, please oh please, she can't have sent him, she couldn't have, right?!"
+
+-> *Say you doubt she sent him to military school.*
+    [[SearchTheRoom.FindMilitarySchoolLetter.SaySheDidntSendHimOff]]
+-> *Tell the boy it's impossible to know for certain.*
+    [[SearchTheRoom.FindMilitarySchoolLetter.SaySheSentHimOff]]
+-> *Tell him she couldn't have sent him off.*
+    [[SearchTheRoom.FindMilitarySchoolLetter.SaySheDidntSendHimOff]]
+-> *Say it's the most probable solution.*
+    [[SearchTheRoom.FindMilitarySchoolLetter.SaySheSentHimOff]]
+===
+
+title: SearchTheRoom.FindMilitarySchoolLetter.SaySheSentHimOff
+---
+He looks at you in despair. Then a flash of hope runs through his eyes.
+
+Jack: "No... no she couldn't have. What she said earlier, outside... she was talking about him right? What did she say...? She was saying "When are you finally going to come back", or something like that right?"
+
+Jack: "And the police officers. She called the police and they've been running the investigation. No she didn't send him off." a sigh of relief escapes him and he lets himself fall and sit on the ground. Tears start welling up in the boy's eyes and he sobs softly.
+
+-> *Comfort the boy.*
+-> *Tell him he's putting too much pressure on himself.*
+-> *Ask him what his relationship with Will really is.*
+    He looks at you confused, not by the question but by the lack of an answer. Then his gaze falls to the floor and pauses there. 
+    Jack: "I don't know..." he finally mumbles.
+
+After a few seconds, the boy composes himself enough to speak.
+Jack: "I'm just so worried about him... This all started because of me. I shouldn't have ran when he kissed me. I shouldn't have left him alone with all of those assholes around." he cups his face in his palms. "What if he ran because he had nobody to talk to?"
+
+[[SearchTheRoom.MillieEntersTheScene]]
+===
+
+title: SearchTheRoom.FindMilitarySchoolLetter.SaySheDidntSendHimOff
+---
+He looks at you and a flash of hope runs through his eyes.
+
+Jack: "Yes... yes she couldn't have. What she said earlier, outside... she was talking about him right? What did she say...? She was saying "When are you finally going to come back", or something like that right?"
+
+Jack: "And the police officers. She called the police and they've been running the investigation. No she didn't send him off." a sigh of relief escapes him and he lets himself fall and sit on the ground. Tears start welling up in the boy's eyes and he sobs softly.
+
+-> *Comfort the boy.*
+-> *Tell him he's putting too much pressure on himself.*
+-> *Ask him what his relationship with Will really is.*
+    He looks at you confused, not by the question but by the lack of an answer. Then his gaze falls to the floor and pauses there. 
+    Jack: "I don't know..." he finally mumbles.
+
+After a few seconds, the boy composes himself enough to speak.
+Jack: "I'm just so worried about him... This all started because of me. I shouldn't have ran when he kissed me. I shouldn't have left him alone with all of those assholes around." he cups his face in his palms. "What if he ran because he had nobody to talk to about it?"
+
+[[SearchTheRoom.MillieEntersTheScene]]
+===
+
+title: SearchTheRoom.MillieEntersTheScene
+---
+Unknown: "Jackpot, doofus."
+
+The unknown voice startles you and you both recoil back further into the room. A dark silhouette is perched at the window frame, holding the newspaper drapes up with one hand. With a dexterous movement she leaps down into the room. A few seconds pass before Jack finally whispers...
+
+Jack: "Millie? What the hell are you doing here! How did you get up!?" he pushes off of the floor frustrated.
+
+You compose yourself and are now able to understand what's happening. Millie is a tall, sturdy looking young girl, with straight auburn hair tipped with white. Her long pointed nose had always been her distinguishing feature however, only rivalled by her muscular physique.
+
+Millie: "There's a ladder in the backyard asshole. If you're going to be attempting a break-in, at least plan ahead a little bit. You always were too rash. That head wasn't just made for banging into rugby players you know?" she scoffs.
+
+Millie: "Next time try to keep it down when breaking and entering a house, it's bad practice... and stop chucking things out of windows, you hit me in the head" she produces the letter Jack had flung a second ago and tosses it back to the boy.
+
+Jack: "Cut it with the sass will you" he says, catching the piece of paper. "You didn't answer my question. What are you doing here Millie?"
+
+Millie: "I was bored at home so I came over to take a look at Will's character sheet. I can't run the campaign without his character and I've got some new people who want to join." she smiles wickedly.
+
+Jack: "You never told me you were continuing the campaign without Will..."
+
+Millie: "Oh you're not going to be playing with us anymore, you got turned into a slug and eaten." she says, spotting the backpack that sprawled open on the floor next to the bed, then approaching to take the D&D character sheet.
+
+Millie: "Oh also, yes you did cause all of this" she says without even looking at him. "What, dad's 'training' got the better of you? Couldn't have boys kissing you right? Noooo, that's unacceptable, a proper man runs away from a situation like that." she says, leafing through the textbooks and spots the character sheet and dice. 
+
+Millie: "You know what you should have done? Should have decked him, that'll teach him to mess with you."
+
+Jack: "Millie, you know I didn't mean to..."
+
+Millie: "Well it doesn't matter now does it!?" she exclaims. "He's gone because of you and your asshole friend here." she turns to you. "Had to run off and be a good little boy, tell coach and the principal" she says it mockingly, impersonating a baby.
+
+Millie: "You could have handled it on your own and this whole mess would have been avoided. That..." she points to the military note. "That is your fault." she looks at both of you. "The day after the incident Mr. Cunningham suspended Will from school and wrote a letter to Mrs. Johns telling her that her son was 'an abomination and not fit for a moral educational facility'."
+
+Millie: "I guess she figured an immoral one would be better." she looks back at Jack. "You know, I though you'd changed. You used to be such an asshole but for a few weeks there, I thought you might actually be decent and not turn into a copy of dad, otherwise I would have never helped you guys with the stupid detention."
+
+Millie: "Guess I was wrong though... You're just like him." she looks him up and down in disgust.
+
+You look back at Jack. The boy looks drained and deflated, staring at the floor. He looks up at her after she's done.
+
+Jack: "How do you know all of this... I never knew Will was being enlisted, didn't know he was suspended..."
+
+Millie: "Cause unlike you, we actually cared about him and came to talk to him afterwards, instead of hiding."
+
+Jack: "I didn't know what to say to him!? How to react! He KISSED me!"
+
+Millie: "Big whoop he kissed you! UGH you're such a little brat brother, I feel like I could just give you a big ol' kiss with my fist, send you into hiding again!" she looks visibly frustrated. "And to answer your question from before, no he didn't get enlisted. That requires permission from both guardians. Mrs. Johns and her husband are separated but not divorced, she can't have that, the good christian lady."
+
+Millie: "His dad came back into town, but he didn't give his permission to..."
+
+Suddenly a flash of light blinds you, streaming through the door of the room, left slightly ajar. In the heat of the debate, none of you realized how loud you'd gotten.
+
+Bethany: "Who's up there!!! William!?"
+
+You have only a split second to react before both Millie and Jack make a break for the window. The girl jumps out first without even grabbing the ladder, while Jack mounts the window frame, then looks back and yells at you. 
+
+Jack: "Come on we've got to get out of here!" then proceeds to follow Millie in jumping out of the window.
+
+You dash towards the frame and jump onto the parapet. As you turn to mount the steps of the ladder that Millie put up, you see a dark figure enter the room you were just in and a loud scream pierces your ears. You slide down the ladder and it crashes over from the steps into the garden below. Following Jack, you dash through the yard and leap over the green fence with two quick movements.
+
+You sprint for a long while before the boy before you starts slowing down. You're well out of the way and the woman couldn't have followed you all the way here. You stop and take a breather, only now noticing how out of breath and exhausted you both are. You look around. Millie is nowhere to be seen.
+
+-> *Say you didn't really learn anything from that.*
+    He pants, doubled over to lean on his knees. Through ragged breaths, he finally manages:
+    Jack: "No... no it wasn't meaningless" he straightens up and tries to calm his breathing. After recovering he continues. "No, Millie definitely knew something about what happened to Will. She talked to him before he went missing, that means he might have told her if he was going to escape. And his dad... I didn't know his dad was back in town."
+-> *Tell Jack you've got an idea where Will might be.*
+    He pants, doubled over to lean on his knees. Through ragged breaths, he finally manages:
+    Jack: "Yeah... I think so too. Millie definitely knew something about what happened to Will. She talked to him before he went missing, that means he might have told her if he was going to escape. And his dad... I didn't know his dad was back in town."
+
+The boy produces the ornate boat from his jacket.
 ===
