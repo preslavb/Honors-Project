@@ -279,9 +279,10 @@ title: SearchTheRoomOptions
     <<set $examinedPoster to true>>
     You walk up to the wall and run one hand along the edge of the poster to straighten it out. As the roll unfolds, you're presented with a beautiful painting of a columbus era ship, the shipmates climbing ropes like monkeys, and a dignified captain standing proud next to his helmsman. 
     Jack: "Oh wow." Jack inches closer to get a better look. "I knew Will always liked the idea of sailing but I never knew he was this obsessed by it. Look here..." he bends down and picks up a beautiful wooden model of a ship, painted with gold and blue on top of a stand.
-    Jack: "He used to bring this to our D&D sessions. His character was captain of the 'Liberta'. He absolutely loves this boat." he points to a golden plaque secured to the stand. It reads "Charles Johns".
-    Jack: "I think that's his dad's name. He used to be a sailor if I remember correctly. Will used to wear this striped shirt a lot as well, a blue and white one, like the sailors have. That was a present from his dad too. He's been out of town for a while now though, and I don't think he's allowed to see Will too much." he puts the figurine down.
-    Jack: "Come on let's get back to it." Then he returns to the pile of documents on the desk.
+    Jack: "This looks new. I've never seen this one before." he points to a golden plaque secured to the stand. It reads "Charles Johns".
+    Jack: "I think that's his dad's name. He used to be a sailor if I remember correctly. Will used to wear this striped shirt a lot as well, a blue and white one, like the sailors have. That was an old present from his dad too. He's been out of town for years now though, and I don't think he's allowed to see Will too much." he puts the figurine down.
+    Jack: "I've heard some rumors around school that he wasn't allowed to see the family anymore because he was abusive towards Will. He even beat him bloody one time..." his fist curls up angrily around the boat. "Why would a guy like that be sending gifts now..." he ponders for a second, then turns towards the desk.
+    Jack: "Come on let's get back to it."
     [[SearchTheRoomOptions]]
 
 [[SearchTheRoom.FindMilitarySchoolLetter]]
@@ -424,7 +425,7 @@ Jack: "I didn't know what to say to him!? How to react! He KISSED me!"
 
 Millie: "Big whoop he kissed you! UGH you're such a little brat brother, I feel like I could just give you a big ol' kiss with my fist, send you into hiding again!" she looks visibly frustrated. "And to answer your question from before, no he didn't get enlisted. That requires permission from both guardians. Mrs. Johns and her husband are separated but not divorced, she can't have that, the good christian lady."
 
-Millie: "His dad came back into town, but he didn't give his permission to..."
+Millie: "His dad came back into town, but he..."
 
 Suddenly a flash of light blinds you, streaming through the door of the room, left slightly ajar. In the heat of the debate, none of you realized how loud you'd gotten.
 
@@ -434,7 +435,7 @@ You have only a split second to react before both Millie and Jack make a break f
 
 Jack: "Come on we've got to get out of here!" then proceeds to follow Millie in jumping out of the window.
 
-You dash towards the frame and jump onto the parapet. As you turn to mount the steps of the ladder that Millie put up, you see a dark figure enter the room you were just in and a loud scream pierces your ears. You slide down the ladder and it crashes over from the steps into the garden below. Following Jack, you dash through the yard and leap over the green fence with two quick movements.
+You dash towards the frame and jump onto the parapet. As you turn to mount the steps of the ladder that Millie put up, you see a dark figure enter the room you were just in and a loud scream pierces your ears. You slide down the ladder and it crashes over from the steps into the garden below. Following Jack, you dash through the yard and leap over the green fence with two quick movements. You notice the rain has stopped, and the vague light of the sun is beginning to stream from the horizon, obscuring the stars.
 
 You sprint for a long while before the boy before you starts slowing down. You're well out of the way and the woman couldn't have followed you all the way here. You stop and take a breather, only now noticing how out of breath and exhausted you both are. You look around. Millie is nowhere to be seen.
 
@@ -446,4 +447,157 @@ You sprint for a long while before the boy before you starts slowing down. You'r
     Jack: "Yeah... I think so too. Millie definitely knew something about what happened to Will. She talked to him before he went missing, that means he might have told her if he was going to escape. And his dad... I didn't know his dad was back in town."
 
 The boy produces the ornate boat from his jacket.
+Jack: "Took this as a souvenir" he says, looking at the label. "Charles Johns. Now... where do you live mister Charles..." he ponders for a second. "Any ideas?"
+
+-> *Try Googling him?*
+-> *Say you've got no clue.*
+
+Jack: "Well google it is then." the boy takes out his phone and starts rummaging the internet. When the boy disappeared a month ago, there were quite a few articles published asking people to look for him and report if they see him, but that had quickly died down as prospects of finding Will became slimmer. Finally, among some of the articles, Jack spots a website link.
+
+Jack: "Look. 'Charles Johns, the boy's father, had recently returned to the town to open a carpentry business'. He even has a website..."
+
+The webpage looks woefully unfinished and amateur, but the man's skill is clearly apparent from the pictures.
+
+Jack: "I think we found our new lead. It can't be a coincidence, him coming back to town just as Will..." a troubled look flashes on Jack's face. "Why would his father, who never cared for him and was never around, all of a sudden shower him with gifts like this and turn up just as his son goes missing?"
+
+Jack: "I think we need to pay Mr. Johns a visit and ask him some questions."
+
+The address of the man is close by, but then again, so is everything else in this small town. It takes you no more than 20 minutes to reach it, and by then the morning sun is fully risen. You stop before the house.
+
+It is a small but well kept two-storey building, with a flaking and dirty white facade that someone has not yet completely painted over with red. A newly installed electric bell with exposed wires sits at the side of the front door. Jack steps up to the entrance and gives the bell two quick pushes.
+
+Jack: "This looks fairly new."
+
+You hear footsteps from within and after a few moments, the lock clicks and a tall, muscular man of around 50 years opens the door. He wears a charming grin beneath eerily pale blue eyes.
+
+Charles: "Hello there," he looks you and Jack up and down. "You've come early, I haven't opened shop yet. If you're here to collect, I could probably help you load up your order, otherwise you'll have to excuse me young gentlemen but you'll have to wait until I open to place a new order."
+
+Jack: "Mr. Johns, my name is Jack, we're here to talk about you son William."
+
+Charles looks you up and down again, far more thoroughly this time, and with a grin far less charming and natural.
+
+Charles: "Oh... hello Jack. I've heard a lot about you the past few weeks." he leans out of the way with one hand on the door frame. "Well any friend of William's is welcome here." he says cooly "Come on in, there's tea and coffee if you take them."
+
+Jack: "Thanks" Jack says and steps through the door.
+
+-> *Thank the man for welcoming you.*
+-> *Ask for some coffee.*
+    Charles: "Right away"
+-> *Ask for some tea.*
+    Charles: "Right away"
+
+You step inside. The house has become more of a workshop than a living space. You see all sorts of building tools thrown about the place, and half finished pieces of furniture in every conceivable corner of the room. It looks as though Charles has been busy.
+
+Jack walks to the middle of the room, and doesn't even wait for Charles to take a seat or bring the drinks before starting.
+
+Jack: "Mr. Johns, when did you come back to town? We were under the impression that you were permanently away on foreign business."
+
+Charles looks equal parts amused and confused.
+Charles: "Well, I came back 34 days ago. Just in time to hear what happened with my son, and his suspension from school."
+
+Jack: "And what have you heard?"
+
+Charles: "I heard that there was an unfortunate incident that should not have happened at a certain party. I also heard you ran from the scene immediately after the... 'confrontation' shall we say. Anyhow, you haven't yet told me why exactly you're here. What about William interests you so much?" he asks.
+
+Jack's expression sours. "Your son is missing, sir, and we are worried about him, as I imagine you are..."
+
+Charles: "You presume too much" Charles interrupts. "I am not in fact worried about William."
+
+Jack tenses up. "He might have been kidnapped, or hurt! What do you mean you're not worried!?"
+
+Charles: "Well that may be so, in any case I have no particular connection with my son nor he to me." he looks back towards you, then back to Jack. "Is this some sort of junior crimes investigation I've found myself in the middle of, officers?" he grins.
+
+Jack looks toward you, and you see him waver. Charles persists.
+
+Charles: "Well, don't let me keep you from your important duties, I am certain you will be able to find out far more than those pesky investigators from the police." he triumphantly lands on a sofa placed without any specific thought or reason in the middle of the room. "Go on then, what else would you like to ask."
+
+Jack takes a deep breath and continues. "Why have you been sending your son gifts if you are not 'close in any way'?" with that the boy gains back some courage. He produces the ornate wooden boat from his pocket. "You have been making contact with your son as of late, which it seems to me, sir, is much unlike you." He starts pacing the room, more confident now.
+
+Charles: "Ah... so it would appear I am the primary suspect in this little investigation." his grin widens in amusement, and he leans forward in his couch. "I am afraid I am less compelled to answer personal questions to you than I would be to an actual police officer however." his face darkens and the grin he's been wearing since you came in evaporates.
+
+Jack however is not paying attention. He has seen something else. Quickly he turns and says "How can you care so little. He is your SON! I've heard about your attitude towards him Mr. Johns, how you mistreated him, but I hoped that I could at least get some sort of information that would help us from you. I hoped you would have the common decency to at least feign concern for your son." the boy squinted at the bigger man, anticipating a response.
+
+Instead, he got a shrug. "It would appear I have become a disappointment yet again." he laughs. "But I won't let this little meeting of ours be completely ruined. Let me grab that coffee I promised you. I won't have you telling stories around town about what a bad host I've been."
+
+With that, Mr. Johns shoves off of the couch and leaves the room. Jack immediately turns to you and whispers...
+Jack: "He's HERE!" The boy beckons you to come closer, and once you're close, he points at a desk in one corner of the room. The computer monitor on top is almost completely obscured by stacks of paper and tools, but behind them, there is an open page of a train ticket catalogue to Michigan... one-way tickets for two, one adult and one child.
+
+Jack grabs you by the shoulders. "Two tickets, TWO. He must be here, he's hiding him." The boy is ecstatic and frantic. "Come on, we need to spread out and find him, hurry! I'll go around to the basement to look for him, you go to the second floor and look for an attic!" the boy doesn't let you reply, and immediately darts off in the hallway.
+
+[[SearchCharlesHouseOptions]]
+===
+
+title: SearchCharlesHouseOptions
+---
+-> *This is insane!* <<if $thisIsInsane is false>>
+    <<set $thisIsInsane to true>>
+    ...
+    ...
+    You stand alone in the room.
+    [[SearchCharlesHouseOptions]]
+-> *Run up the steps.*
+
+<<if $thisIsInsane is true>>
+You sigh. You've got no choice.
+<<endif>>
+
+You run up the stairs and look around. To your right is a slightly open door leading to a bathroom. To your left goes a corridor with two doors and a bend at the end going left.
+
+[[SearchingSecondFloorOptions]]
+===
+
+title: SearchingSecondFloorOptions
+---
+-> *You check the bathroom.* <<if $checkedBathroom is false>>
+    <<set $checkedBathroom to true>>
+    You quietly push the door open and peek inside. It is small and in complete disarray. There are no signs of Will here or spaces where he could hide. You leave the door slightly ajar like it was before you examined it. 
+    [[SearchingSecondFloorOptions]]
+-> *You check the first door in the corridor.* <<if $checkedFirstDoor is false>>
+    <<set $checkedFirstDoor to true>>
+    You creep up to the first door in the corridor and push on the handle. It squeaks and for a second you're certain that you're going to be heard, but finally, the door swings open.
+    It's dark inside and as soon as you walk in, a broom falls and hits you in the head. You look around and see labels and bottles all around, arrayed on crude and unrefined wooden shelves. There is no space here for even you to enter the space, let alone for someone to be hiding here. You walk out of the cupboard, leaving the door slightly open for fear of causing too much noise with the handle again.
+    [[SearchingSecondFloorOptions]]
+-> *You check the second door in the corridor.* <<if $checkedSecondDoor is false>>
+    <<set $checkedSecondDoor to true>>
+    You walk to the second door in the corridor and notice this one is missing a handle completely. You give it a slight push and it opens effortlessly. Inside is a bleak white room with no furniture, just bare walls and a ceiling. This house is not well equipped for living in, you note, as you close the door, as much as you can without a handle.
+    [[SearchingSecondFloorOptions]]
+-> *You run down the corridor and turn the left corner.* <<if !($checkedBathroom is true and $checkedFirstDoor is true and $checkedSecondDoor is true)>>
+
+You pace down the corridor quickly and as you approach the corner, you hear a clang of something hitting the floor. You look around at the continuation of the corridor and see nothing except for a hatch on the ceiling.
+A red hatch.
+A red hatch that's <color=red>dripping<color=red> red liquid all over the uncarpeted rough floor, spilling the color on the ground.
+
+Charles: "Can I help you young man. It's not polite to go snooping around like that."
+
+You turn around and see Charles standing at the bend of the corridor, a tray of tea and coffee in his hands. He looks at you intensely and then up at the hatch, then back to you. You hear footsteps but you're unsure if they are coming from the attic or from somewhere else in the house.
+
+The tray of coffee and tea bursts out of Charles's hands and up in the air, splashing the walls, floors and ceiling with brown liquid. The man falls to the ground and it takes you a few seconds to get your bearings and notice that Jack is down on the ground with him.
+
+*He tackled him* you think, as the two men struggle on the ground.
+
+-> *Help Jack.*
+-> *Break up the fight.*
+-> *Pull Jack off.*
+-> *Search for a way up to the attic while Charles is distracted.*
+
+You take a step forward but just as you do, you hear a loud bang from above. The scream of a hinge tears through the corridor and you feel a splash at your back. When you turn to look at your arms they are covered in blood. You look behind and see the hatch to the attic swing loosely, dripping with the red liquid. The floor is now completely covered with it. Your stomach turns.
+
+But then a ladder crashes to the ground from the open hatch and a loud shriek yells "STOOOOOOOP!".
+You hear the rhythmic thump of someone going down the steps, and after a moment a scrawny boy emerges from the hatch and jumps down to the floor.
+It's Will.
+
+Jack, is now being held down on the ground by Charles, looks up and freezes.
+Everything stops and nobody says anything, not even Millie, who climbs down after the missing boy.
+
+William: "What are you doing here, Jack" the boy finally manages, tears welling up in his eyes.
+Charles lets out a sigh and adds to Jack "Son, you've just made things a lot more complicated". Then he lets go and helps the boy stand on his feet.
+
+Jack looks stunned at the scrawny kid.
+Jack: "I've been looking for you Will. We've been looking for you everywhere" he says, his voice breaking up as the tears take over his eyes as well. Then he looks toward Charles and steps back.
+Jack: "What's happening here!? Why have you been keeping him in the attic! And Millie!? What are you doing here!?"
+
+Charles: "Settle down, settle down..." Charles turns to his son. "Will, take our guests down to the hall." he looks down at his coffee and tea stained shirt, then to the dripping hatch. "Millie you're going to have to give my apologies to your dad for ruining your office. What happened up there!?"
+
+Millie: "We wanted to hear what's happening and I accidentally bumped into and spilled the red paint" she says, scratching her head.
+Charles laughs. "Well the place still needs some paint so..."
 ===
