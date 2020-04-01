@@ -838,6 +838,7 @@
           <e p="ScrollCarets.cs" t="Include" />
           <e p="TextAreaScript.cs" t="Include" />
           <e p="TextPreprocessor.cs" t="Include" />
+          <e p="VolumeIconScript.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
