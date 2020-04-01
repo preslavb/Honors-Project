@@ -1,35 +1,46 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Yarn.Unity;
 
-[RequireComponent (typeof (Image))]
 /// Attach SpriteSwitcher to game object
-public class UiSpriteSwitcher : MonoBehaviour {
-
-    [System.Serializable]
-    public struct SpriteInfo {
-        public string name;
-        public Sprite sprite;
-    }
-
-    public SpriteInfo[] sprites;
+public class UiSpriteSwitcher : MonoBehaviour
+{
+    private const float TRANSITION_TIME = 1.2f;
+    
+    [SerializeField] private Image _currentImage;
+    [SerializeField] private Image _targetImage;
 
     /// Create a command to use on a sprite
-    [YarnCommand("setsprite")]
+    [YarnCommand("set_sprite")]
     public void UseSprite(string spriteName) {
 
-        Sprite s = null;
-        foreach(var info in sprites) {
-            if (info.name == spriteName) {
-                s = info.sprite;
-                break;
-            }
-        }
-        if (s == null) {
-            Debug.LogErrorFormat("Can't find sprite named {0}!", spriteName);
-            return;
+        // Load the sprite
+        var targetImage = Resources.Load<Sprite>(spriteName);
+
+        StartCoroutine(SwitchSpritesCoroutine(targetImage));
+    }
+
+    private IEnumerator SwitchSpritesCoroutine(Sprite targetSprite)
+    {
+        _targetImage.sprite = targetSprite;
+
+        var timer = 0f;
+
+        while (timer < TRANSITION_TIME)
+        {
+            timer += Time.deltaTime;
+
+            var color = _targetImage.color;
+
+            _currentImage.color = Color.Lerp(Color.clear, _currentImage.sprite ? Color.white : Color.clear, 1 - (timer / TRANSITION_TIME));
+            _targetImage.color = Color.Lerp(Color.clear, Color.white, timer / TRANSITION_TIME);
+
+            yield return new WaitForEndOfFrame();
         }
 
-        GetComponent<Image>().sprite = s;
+        _currentImage.sprite = _targetImage.sprite;
+        _targetImage.color = Color.clear;
+        _currentImage.color = Color.white;
     }
 }

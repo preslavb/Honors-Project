@@ -5,6 +5,8 @@ You spot a group of fireflies dancing atop the water's surface, their light refl
 
 Then suddenly you feel a shock as a trickle of ice-cold water runs down into your collar and down your back. You shiver and jump up from the grass.
 
+<<set_sprite Speaker1 Jack>>
+
 Jack: "Hahahaha! Dude you really should stop with the whole 'romantically drifts off' thing, someone might take advantage of you." he grins boyishly, shaking the rest of the water off his hand.
 
 -> *Scold him for taking you out of the moment.*
@@ -19,8 +21,6 @@ Jack: "Hahahaha! Dude you really should stop with the whole 'romantically drifts
     He winces. "Well now I'm as wet as you are." He pretends to wipe his face off.
 
 Jack: "I'm done drawing by the way" he motions to the sketchbook and pencils laid by the tree. "My eyes are starting to hurt real bad so I'm calling it a day."
-
-<<clear_history TextArea>>
 
 You've known Jack for a very long time. Ever since you were kids, he has always been trying to be the strongest and most impressive in any group he was in. He's also always been shit at expressing things when he was bothered by something, like he was now.
 
