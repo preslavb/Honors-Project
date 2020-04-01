@@ -6,12 +6,16 @@ using UnityEngine;
 
 public class PressEnterToContinueScript : MonoBehaviour
 {
+    [SerializeField]
+    private GameEventListener _transitionToGameEvent;
+    
     // Update is called once per frame
     void Update()
     {
         if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Escape))
         {
-            GameEventManager.ProcessGameEvent(new GameEventMessage("Test"), true);
+            //_transitionToGameEvent.Invoke(_transitionToGameEvent.GameEvent, 0f);
+            GameEventMessage.SendEvent(_transitionToGameEvent.GameEvent);
         }
     }
 }
