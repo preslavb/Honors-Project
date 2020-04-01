@@ -826,10 +826,18 @@
           </e>
           <e p="readme.txt" t="Include" />
         </e>
+        <e p="Fonts" t="Include">
+          <e p="Caveat" t="Include">
+            <e p="OFL.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="ExpandButtonContainerScript.cs" t="Include" />
+          <e p="FadeInDialogueContainerScript.cs" t="Include" />
+          <e p="PressEnterToContinueScript.cs" t="Include" />
           <e p="ScrollCarets.cs" t="Include" />
           <e p="TextAreaScript.cs" t="Include" />
+          <e p="TextPreprocessor.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
