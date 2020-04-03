@@ -830,10 +830,14 @@
           <e p="Caveat" t="Include">
             <e p="OFL.txt" t="Include" />
           </e>
+          <e p="Noto Sans" t="Include">
+            <e p="LICENSE.txt" t="Include" />
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="ExpandButtonContainerScript.cs" t="Include" />
           <e p="FadeInDialogueContainerScript.cs" t="Include" />
+          <e p="MusicPlayer.cs" t="Include" />
           <e p="PressEnterToContinueScript.cs" t="Include" />
           <e p="ScrollCarets.cs" t="Include" />
           <e p="TextAreaScript.cs" t="Include" />
