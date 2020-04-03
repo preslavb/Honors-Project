@@ -16,7 +16,7 @@ public class UiSpriteSwitcher : MonoBehaviour
     public void UseSprite(string spriteName) {
 
         // Load the sprite
-        var targetImage = Resources.Load<Sprite>(spriteName);
+        var targetImage = spriteName == "none" ? null : Resources.Load<Sprite>(spriteName);
 
         StartCoroutine(SwitchSpritesCoroutine(targetImage));
     }
