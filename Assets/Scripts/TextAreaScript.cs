@@ -122,7 +122,9 @@ public class TextAreaScript : MonoBehaviour
                 // When we click the button, we should display the response in the history
                 ShrinkText();
                 AppendText();
-                FillActiveText($"You: {button.GetComponentInChildren<TextMeshProUGUI>().text}");
+                FillActiveText($"You: {button.GetComponentsInChildren<TextMeshProUGUI>()[1].text}");
+                _currentActiveText.maxVisibleCharacters = 300;
+                _currentActiveText.color = new Color(0xFF / 255f, 0xE8 / 255f, 0x23 / 255f);
             });
         }
 
