@@ -6,15 +6,17 @@ You spot a group of fireflies dancing atop the water's surface, their light refl
 Then suddenly you feel a shock as a trickle of ice-cold water runs down into your collar and down your back. You shiver and jump up from the grass.
 
 <<set_sprite Speaker1 Jack>>
+<<set_music MusicPlayer cheerful>>
 
 Jack: "Hahahaha! Dude you really should stop with the whole 'romantically drifts off' thing, someone might take advantage of you." he grins boyishly, shaking the rest of the water off his hand.
 
 -> *Scold him for taking you out of the moment.*
-    Jack: "LOL. I bet you even have a narrator in your head describing everything super fancily."
+    Jack: "Your internal narration is probably super fancy as well." he quips.
     Jack: "'The moon sang with the birds and the critters' and whatnot" he mocks with a deep voice as someone might during a theatre performance.
 -> *Splash him with water.*
     You reach down to the water with you palm.
     Jack: "Oh don't you dare" he squints at you threateningly.
+    <<play_sfx MusicPlayer splash>>
     You dare. With one swift motion, you spray the boy from head to heel. He stands motionless, eyes clenched, water dripping off his nose.
     Jack: "You piece of ... THIS IS MY FAVORITE JACKET!" he takes on a furious frown, but fails to sustain it as another bout of laughter breaks his composure.
 -> *Blow a raspberry at him.*
@@ -22,20 +24,28 @@ Jack: "Hahahaha! Dude you really should stop with the whole 'romantically drifts
 
 Jack: "I'm done drawing by the way" he motions to the sketchbook and pencils laid by the tree. "My eyes are starting to hurt real bad so I'm calling it a day."
 
-You've known Jack for a very long time. Ever since you were kids, he has always been trying to be the strongest and most impressive in any group he was in. He's also always been shit at expressing things when he was bothered by something, like he was now.
+<<set_sprite Speaker1 none>>
+<<tune_music MusicPlayer preset introspect>>
+
+You've known Jack for a very long time. Ever since you were kids, he has always been trying to be the strongest and most impressive in any group he was in. He's also always been bad at expressing things when he was bothered by something, like he was now.
 
 You only recently came back into town, and your friendship took a while to flourish, but these days, the boy was a lot more open with you. His dad didn't like him doing anything other than rugby practice, so he asked you sometimes to sneak off with him so he could draw.
 Nobody else knew, and Jack liked it that way. Can't have people thinking he's a pansy artist or anything like that.
 He had an easy smile that rarely left his face, even in the midst of rough situations, but tonight, you find a sadness behind it that even his best efforts could not obscure.
 
 -> *Ask the boy how he's feeling.*
+    <<tune_music MusicPlayer preset default>>
+    <<set_sprite Speaker1 Jack>>
     Jack: "Huh? I'm fine. Why? I'm fine." he says, too quickly to be natural. After a few moments he shrugs "I'm just bummed out about the campaign is all. It was just getting interesting but Will had to go and get himself kidnapped or lost or whatever..."
-
 -> *Tease him and make a joke of it.*
+    <<tune_music MusicPlayer preset default>>
+    <<set_sprite Speaker1 Jack>>
     Jack: "Hahaha get out. I'm fine dude..." he says, too quickly to be natural. After a few moments he shrugs "I'm just bummed out about the campaign is all. It was just getting interesting but Will had to go and get himself kidnapped or lost or whatever..."
 
+<<tune_music MusicPlayer preset introspect>>
 You know the boy isn't genuine. Ever since William's disappearance, Jack's been acting different. He didn't talk about it much, but tonight it seems he has something to say. You glance at the sketchbook, laid out open next to his shining phone flashlight. A ladybug is crawling over the barely-started sketch. It could not have taken him more than 5 minutes, and you've been here for an hour.
 
+<<play_sfx MusicPlayer rock_splash>>
 With a muffled *blub*, a stone crashes through the surface of the pool and disperses the leftover fireflies. The boy's red and white jacket rustles subtly as he kneels down to grab another rock.
 
 Jack: "It's just... it's been a whole month now, you know. Why hasn't anybody called the police yet, he's obviously missing..."     
@@ -50,10 +60,13 @@ With a wind up, he flings the rock out into the lake, splashing even further tha
 
 Jack: "I tried asking Cunningham about it. The asshole just told me to get back to training and stop asking stupid questions. I know he dislikes Will but come on, what kind of a headmaster is so toxic to a student!?"     
 
+<<play_sfx MusicPlayer rock_splash>>
 He chucks a final pebble over the lake and then crashes onto the grass. The boy had gone missing exactly 30 days ago, and since then there had been no news about it at all. Mr. Cunningham obviously knew something, but he's an especially vocal proponent of "the obligations of men to society", and Will had never really fit those criteria, especially after the welcome party incident. So he never shared anything about the situation.
 
 Jack: "I bet he's involved with this somehow. He's such a creep, he probably kidnapped Will to sell his organs or something like that." It's only half a joke.
 Jack: "We need a good investigator on the case is what we need." he slams a fist in his palm and gives you a wicked look. "You remember when we were kids? Millie, you and I, the great detectives, solving the great mystery of why my sister was white and I was black. Truly a fascinating case that was. Not much payoff at the end though."
+
+<<tune_music MusicPlayer preset default>>
 Jack: "We're older now, we don't even need Millie... you and I, we can crack this case right open." he swings an arm over your shoulder.
 Jack: "Come on, what do you say?"
 
@@ -90,7 +103,7 @@ title: WhatHappenedToWill
     <<set $upsideDown to true>>
     Jack looks up at you.
     Jack: "Well wouldn't that be a coincidence" he laughs. "Alas, I believe you're thinking of the wrong Will, detective."
-    He draws a mind flayer in the dirt.
+    He draws a mindflayer in the dirt.
     [[WhatHappenedToWill]]
 ===
 
@@ -116,7 +129,7 @@ The boy swings the backpack on his shoulders and cracks his knuckles.
 Jack: "We've got no time to lose detective. There's no time like the present, they say, and Mrs. Johns will be sound asleep right now, giving us the perfect opportunity to get in there." 
 
 Jack: "I know the way, come on." he beckons, then starts skipping away through the trees, lining the shore of the lake. You follow as best you can.
-
+<<tune_music MusicPlayer preset introspect>>
 The boy had always been very athletic, and it takes active effort and a small jog to be able to keep up with his casual skips. 
 It didn't take long for his dad to notice that particular talent and put it to good use, and for the past few years, Jack had been the star of the school. Headmaster Cunningham even managed to secure a sports scholarship for the kid, and his status surely didn't go unnoticed by his peers.
 
@@ -130,7 +143,8 @@ Jack: "What? Are you analyzing me, detective? You should really save your streng
 
 The boy winces at the mention of the event.
 Jack: "Well... well you were there weren't you, what more is there to talk about?"
-
+<<set_music MusicPlayer introspect>>
+<<set_sprite Speaker1 none>>
 Indeed you were. The welcome party was a disaster. Jack and Will had just come out of a month long detention, and John, Jack's father and coach, had organized a small party for the rugby team to welcome them back. 
 Jack was the star of the team, and his absence had a huge effect on the performance of the team. In that one month they had fallen so low that the principal threatened revoking their funding. So his coming back was a good cause for celebration.
 
@@ -143,20 +157,22 @@ The scrawny boy's eyes were glazed over, and he was barely holding his stance, t
 
 Then Jack broke through. You'd never seen him look this angry. He lunged at the bully and tackled him to the ground, and he looked ready to kill him. That's when you ran to get the principal and coach.
 
-When you came back with them, Zack was lying on the ground, bloodied and battered, and above him... Will had embraced Jack in a kiss. When they broke away, the look on Jack's face was that of absolute shock. He ran, ramming through the crowd who were now pointing and laughing at both of them. Will staggered and fell to his knees in the middle, then lost consciousness.
+When you came back with them, Zack was lying on the ground, bloodied and battered, and above him... Will had embraced Jack in a kiss. When they broke apart, the look on Jack's face was that of absolute shock. He ran, ramming through the crowd who were now pointing and laughing at both of them. Will staggered and fell to his knees in the middle, then lost consciousness.
 
 A month later, he disappeared.
 
-[[QuestionsForJack1]]
+[[FollowJack]]
 ===
 
 title: FollowJack
 ---
 The path through the woods is well known to Jack, and you make good progress with his abnormal pace. You look up at the sky just in time to catch the first drop of rain. When you look down, Will's house is in front of you. 
+<<set_music MusicPlayer detective_suspense>>
+<<set_sprite Background Background3>>
 A two story red brick house that's seen too many seasons. The bricks are crumbled and decayed, flaking off and pooling in masses of red dust near the cracked stones that make a passage to the front door, a light hanging above the frame to illuminate the entrance. A stair runs diagonally above it, to the second floor windows.
 You notice that one of the windows is boarded up with newspapers. It's hard to tell, but through the gloom, you think you notice the glass missing from the pane.
 A concrete wall about 2.5ft surrounds the property, topped by another 2ft of iron green fence, the paint flaking off to reveal the rusted metal underneath. No spikes or wire adorn the old fence, and you gather it's pretty safe to climb.
-
+<<set_sprite Speaker1 Jack>>
 Jack: "After you detective..." Jack gestures up at the fence.
 
 [[OptionsForClimbingFence]]
@@ -169,16 +185,12 @@ title: OptionsForClimbingFence
 -> *Tell Jack this is illegal and you shouldn't be doing it.*
     <<set $reluctantToClimb to true>>
     Jack: "Oh come on, don't be a wuss! You owe it to Will to find him as much as I do! If you hadn't called my dad and the principal..." he looks down to the ground, ashamed. "Anyway, it's gonna be fine, I've been here before when visiting Will, I know how to get in quietly."
-
     With that, Jack grabs the iron bars and pulls himself up, then, with a quick twist, he's over the fence and in the small yard in front of the house.
-
     You look up reluctantly at the bars again. You hadn't thought about it like that. Will had been suspended from the school on the grounds of inappropriate behavior. Boys kissing other boys wasn't exactly the most Christian value, and the school would not tolerate it. If you hadn't called Cunningham, the situation might have been avoided.
     [[ClimbOverFence]]
 -> *Peek through the fence to see if there is a guard dog inside <<if $checkedForGuardDog is false>>
     <<set $checkedForGuardDog to true>>
-
     You peek through the wide bars of the fence cautiously. Scanning the ground lining the inside of the concrete wall, you don't see any signs of a dog, or a pan for its food. You turn around and nod at Jack.
-
     [[OptionsForClimbingFence]]
 ===
 
@@ -197,7 +209,7 @@ title: IntoTheCourtyard
 You move silently through the dirt at the side of the old cracked walkway. A closer look reveals the window is indeed broken and covered with newspapers.
 
 Jack: "There..." he points up to the window. "We should be able to get in through there from the stairs. That's Will's room. Follow me." 
-
+<<tune_music MusicPlayer preset quiet>>
 Jack proceeds to the stairs, hugging the wall as to not get spotted if someone was to come out of the front door. Slowly and quietly, you make your way up to the window. It's a good 3ft above your head.
 [[JumpToTheWindowOptions]]
 ===
@@ -216,9 +228,14 @@ title: GetBoostedByJack
 ---
 Jack: "Alright, let's get you up there then." He puffs up his chest, then forms a ladder with his palms for you to step on and waits with his back against the wall.
 
+<<play_sfx MusicPlayer rock_tumble>>
 You put your weight on his arms and push off of the stairs. He flings you so hard upward that you smash your abdomen into the ledge, taking your breath away.
-
+<<set_sprite Speaker1 none>>
+<<set_music MusicPlayer none>>
+<<play_sfx MusicPlayer door_opening>>
 As you're trying to breathe in, you hear the screech of an old hinge. Behind you, the front door entrance swings open, spilling light on the floor that outlines the figure of a small woman standing at the door frame. The world stops and everything goes deathly silent. 
+<<set_sprite Speaker1 BethanyDark>>
+
 You see Jack press his back against the wall, lowering himself silently to the ground, his hand over his mouth. You hang limply from the window like an old flag about to give your position away. You feel incredibly foolish and helpless, as your chest starts pulsing rapidly.
 
 The woman looks around the yard and clears her throat, then leans to her side and goes to grab something from her pocket. She finally produces the silhouette of something that can only be a gun.
@@ -229,24 +246,28 @@ Woman: "You finally gonna show up!?" she looks around again and takes a step for
 -> *Attempt to pull yourself up into the window.*
     <<set $attemptedToGetUpTheWindow to true>>
     You put all of your strength into your arms and somehow, the adrenaline gives you the boost needed to pull yourself up. You stop yourself an inch before crashing face-first into the newspapers. Your heart begins to beat even faster. There's no way to get in without alerting her, and jumping down will make too much noise and immediately give you away. You place a knee underneath you to steady yourself on the parapet.
+<<set_sprite Speaker1 Bethany>>
+Woman: "Yeah... I thought not." she reaches up and puts the second item near her mouth. 
+<<play_sfx MusicPlayer lighter>>
+You hear the click of a gas lighter. The woman takes a hard drag off her cigarette. You notice the gun is just a lighter.
 
-Woman: "Yeah... I thought not." she reaches up and puts the second item near her mouth. Then you hear the click of a gas lighter. The woman takes a hard drag off her cigarette.
-
-Woman: "You always were a wuss." she signs and takes another drag. "Just like your grandfather. I tried everything. I tried to beat it out of you, I tried to encourage you, to teach you by example... even your damn name. 
+Woman: "You always were a wuss." she sighs and takes another drag. "Just like your grandfather. I tried everything. I tried to beat it out of you, I tried to encourage you, to teach you by example... even your damn name. 
 <b>William</b>. You were supposed to be William the Conqueror, not "Wee Willy" Johns." 
 She leans back on the door frame and just smokes for a few seconds. "*Sigh* God damn it Will! Why did you have to end up like that!... I don't understand... come back and tell me why..." another drag. You think you hear something that might be either a sob or a chuckle. 
 ...
 ...
 ...
 After a while, she inhales deeply, throws her cigarette in the dirt and straightens out her dress.
+<<play_sfx MusicPlayer light_switch>>
 Woman: "Well then... find your own way back." she says, pulling the dangling cord of the light to switch it off. "You can crawl through the window that you broke."
 
-She slams the door and you hear the click of the lock.
+<<play_sfx MusicPlayer locking_door>>
+She closes the door and you hear the click of the lock.
 
 <<if $attemptedToGetUpTheWindow is false>>
 You inhale sharply. You hadn't noticed that you've been holding your breath this whole time. With a strong pull, you mount the parapet and sit on it, breathing heavily in panic.
 <<endif>>
-
+<<set_sprite Speaker1 Jack>>
 A few moments pass until you're finally certain she's gone, then you exchange a look with Jack.
 
 [[AfterBethany]]
@@ -262,25 +283,30 @@ title: AfterBethany
 
 title: ClimbUpTheWindow
 ---
+<<set_music MusicPlayer detective_suspense>>
 Jack clears his throat and adjusts his jacket before turning to you.
 
 Jack: "Don't be stupid... If she'd tried anything I was gonna tackle her and get the gun!" he says, chin high in the air. 
 He takes a second, breathes deeply in and out, then looks back at you. "Come on then, we need to get in there. Move those newspapers!"
 
+<<set_sprite Speaker1 none>>
 You look back at the window hole and notice that one corner of the improvised cover has peeled off and hangs loosely. You reach in and touch the side of the frame up and down until you find a metal pin.
 
 -> *Pull the metal pin.*
 
 You pull on the little pin and the wall of paper collapses to one side, revealing a small disorderly room. It's too dark to make out anything right now.
 
+<<set_sprite Speaker1 Jack>>
 Jack: "Nice! Now help me get up there!"
 
 You jump off the frame into the small room, then turn around and hang your hand down for the large boy to grab. He takes a moment to wind up, then jumps up towards you.
 
+<<play_sfx MusicPlayer rock_tumble>>
 You don't anticipate his weight being so much, and immediately buckle down . You feel a pop in your elbow and a shock of pain runs through your whole arm, but you persist and pull the boy up. Finally he grabs the edge of the window and pulls himself the rest of the way up.
 
 You stumble back. That arm will be very sore for the next few days.
 
+<<set_sprite Background Background4>>
 When the boy stumbles into the window, you look around the small room. It takes a few moments for your eyes to adjust, but the moon is kind and at least partially lights the environment up through the slit where the newspapers were a moment ago.
 
 Jack raises himself off the floor and dusts off his clothes. "Thanks." he finally manages between breaths. Then he looks around, squinting to adust to the dim light.
@@ -300,43 +326,49 @@ After a moment of silence, Jack sighs and steps further into the room. Your eyes
 title: SearchTheRoom
 ---
 Jack: "Come on, let's look around. There's bound to be something here to tip us off" he adds, then starts flipping through the stack of papers on the desk.
+<<set_sprite Speaker1 none>>
 You look around you. A backpack is poking out of the corner of the bed. You also notice a half-torn down poster on the wall.
+
+[[SearchTheRoomOptions]]
 ===
 
 title: SearchTheRoomOptions
 ---
+<<if $searchedBag is false or $examinedPoster is false>>
 -> *Search the bag for clues.*<<if $searchedBag is false>>
     <<set $searchedBag to true>>
     You bend down and pull on the strap of the bag. The contents spill on the floor and you set aside the empty backpack. You recognize most of the books lying before you. A physics workbook, a maths textbook and other such school items, an old, worn pencil case... but then your eye catches a glint from beneath one of the books.
+    <<set_sprite Speaker1 Jack>>
+    <<set_music MusicPlayer none>>
     Jack: "Did you find anything?" Jack asks as he leans over you. You move the book aside to reveal a small open bag with dice in it and a slightly crumpled piece of paper.
-
     Jack: "That's his D&D kit!" he exclaims with visible excitement and goes down on one knee to have a better look. "Oh man... our last session we were fighting a Beholder" he grins, then looks at you expectantly.
-
     -> *Say D&D isn't really your thing.*
-    His smile deflates.
-    Jack: "Well... you know I used to think it was lame too." he says and sits down with his back to the bed.
+        His smile deflates.
+        Jack: "Well... you know I used to think it was lame too." he says and sits down with his back to the bed.
     -> *Beholders...? D&D...? You've got no clue what any of that means.*
-    Jack: "Oh man, we should definitely get Will to teach you how to play when we find him, you'll love it! It's not that difficult to learn, it's a game where you basically just say what you want to do, and the person leading the game makes you roll a die to determine whether you succeed."
-    Jack: "There's rules, sure, but we don't really follow them. I'm pretty sure Millie just rolls the dice for show and never actually looks at them." He chuckles. "I used to think the game was super lame."
+        Jack: "Oh man, we should definitely get Will to teach you how to play when we find him, you'll love it! It's not that difficult to learn, it's a game where you basically just say what you want to do, and the person leading the game makes you roll a die to determine whether you succeed."
+        Jack: "There's rules, sure, but we don't really follow them. I'm pretty sure Millie just rolls the dice for show and never actually looks at them." He chuckles. "I used to think the game was super lame."
     -> *Ask him how they defeated the Beholder.*
-    Jack: "Dude, it was an awesome fight! Will took it out in the end with a natural 20 crit to the eye. He had this awesome explosive blunderbuss." he points at a section of the character sheet that reads "Blunderbuss (Explosive) +2, 2d8". The writing is neat and orderly. 
-    Jack: "I used to think this game was so lame."
+        Jack: "Dude, it was an awesome fight! Will took it out in the end with a natural 20 crit to the eye. He had this awesome blunderbuss with explosive rounds." he points at a section of the character sheet that reads "Blunderbuss (Explosive) +2, 2d8". The writing is neat and orderly. 
+        Jack: "I used to think this game was so lame."
     -> *Tell him you've always wanted to try playing.* 
-    Jack: "Oh man, we should definitely get Will to teach you how to play when we find him, you'll love it! It's not that difficult to learn, it's a game where you basically just say what you want to do, and the person leading the game makes you roll a die to determine whether you succeed."
-    Jack: "There's rules, sure, but we don't really follow them. I'm pretty sure Millie just rolls the dice for show and never actually looks at them." He chuckles. "I used to think the game was super lame."
-
+        Jack: "Oh man, we should definitely get Will to teach you how to play when we find him, you'll love it! It's not that difficult to learn, it's a game where you basically just say what you want to do, and the person leading the game makes you roll a die to determine whether you succeed."
+        Jack: "There's rules, sure, but we don't really follow them. I'm pretty sure Millie just rolls the dice for show and never actually looks at them." He chuckles. "I used to think the game was super lame."
     [[SearchTheRoomOptions.DnD]]
-
 -> *Examine the hanging poster.*<<if $examinedPoster is false>>
     <<set $examinedPoster to true>>
     You walk up to the wall and run one hand along the edge of the poster to straighten it out. As the roll unfolds, you're presented with a beautiful painting of a columbus era ship, the shipmates climbing ropes like monkeys, and a dignified captain standing proud next to his helmsman. 
+    <<set_sprite Speaker1 Jack>>
     Jack: "Oh wow." Jack inches closer to get a better look. "I knew Will always liked the idea of sailing but I never knew he was this obsessed by it. Look here..." he bends down and picks up a beautiful wooden model of a ship, painted with gold and blue on top of a stand.
     Jack: "This looks new. I've never seen this one before." he points to a golden plaque secured to the stand. It reads "Charles Johns".
+    <<set_music MusicPlayer none>>
     Jack: "I think that's his dad's name. He used to be a sailor if I remember correctly. Will used to wear this dorky striped shirt a lot as well, a blue and white one, like the sailors have. That was an old present from his dad too. He's been out of town for years now though, and I don't think he's allowed to see Will too much." he puts the figurine down.
     Jack: "I've heard some rumors around school that he wasn't allowed to see the family anymore because he was abusive towards Will. He even beat him bloody one time..." his fist curls up angrily around the boat. "Why would a guy like that be sending gifts now..." he ponders for a second, then turns towards the desk.
     Jack: "Come on let's get back to it."
+    <<set_sprite Speaker1 none>>
+    <<set_music MusicPlayer detective_suspense>>
     [[SearchTheRoomOptions]]
-
+<<endif>>
 [[SearchTheRoom.FindMilitarySchoolLetter]]
 ===
 
@@ -352,17 +384,23 @@ You notice the boy's expression change, as he reminisces.
 
 He clears his throat and looks down, pondering something. Then his expression changes back to the mask of the cheerful youth you'd come to expect.
 Jack: "Haha, anyway, enough of that. Let's hurry up, we shouldn't linger too long, we might get found out." he stands and moves back to the desk of papers.
-
+<<set_sprite Speaker1 none>>
+<<set_music MusicPlayer detective_suspense>>
 [[SearchTheRoomOptions]]
 ===
 
 title: SearchTheRoom.FindMilitarySchoolLetter
 ---
+<<set_sprite Speaker1 Jack>>
+<<set_music MusicPlayer none>>
 Jack: "Whoa... Come take a look at this will you" he beckons to you without turning. When you approach, he hands you a torn envelope with a letter inside.
 Jack: "The text I can't read at this light, but that logo I know." he points to the emblem painted on the envelope. "That's the military school that came to recruit two months ago. I had half a mind to join but dad told me some kids died there recently and that he won't let me."
 
 You move to the window, where more of the moon's light can shine through the leftover scraps of newspaper. You carefully open the envelope and take out the letter. Jack leans from behind you to read along.
-<i>Dear Mrs. Johns, <br><br>We applaud you for your patriotism and devotion to America in offering your son the prestigious opportunity to learn and serve at our Grimshaw Military Academy. We can assure you that your son, William C. Johns, will receive the absolute top class military training at our institution. <br><br>We are writing to inform you that the academy takes all recruits aged 16 and older, regardless of skill or talent.</i> 
+<<set_music MusicPlayer introspect>>
+<i>Dear Mrs. Johns, <br><br>We applaud you for your patriotism and devotion to America in offering your son the prestigious opportunity to learn and serve at our Grimshaw Military Academy. </i>
+
+<i>We can assure you that your son, William C. Johns, will receive the absolute top class military training at our institution. <br><br>We are writing to inform you that the academy takes all recruits aged 16 and older, regardless of skill or talent.</i> 
 
 <i>The rigorous training they receive will adequately prepare them for their service in the name of Freedom, and we can assure you that your previously mentioned worries over the inappropriate attitudes your son exhibits will be entirely eradicated through discipline.</i>
 
@@ -406,7 +444,7 @@ Jack: "No she didn't send him off. Whatever happened, it wasn't her that did it.
 -> *Ask him what his relationship with Will really is.*
     He looks at you confused, not by the question but by the lack of an answer. Then his gaze falls to the floor and pauses there. 
     Jack: "I don't know..." he finally mumbles.
-
+<<set_music MusicPlayer none>>
 After a few seconds, the boy composes himself and wipes his tears off in his sleave.
 Jack: "I'm just worried about him is all... I'm fine, I'm good. It's not proper for men to be crying around, especially in the middle of an investigation!"
 
@@ -428,7 +466,7 @@ Jack: "No she didn't send him off." a sigh of relief escapes him and he lets him
 -> *Ask him what his relationship with Will really is.*
     He looks at you confused, not by the question but by the lack of an answer. Then his gaze falls to the floor and pauses there. 
     Jack: "I don't know..." he finally mumbles.
-
+<<set_music MusicPlayer none>>
 After a few seconds, the boy composes himself and wipes his tears off in his sleave.
 Jack: "I'm just worried about him is all... I'm fine, I'm good. It's not proper for men to be crying around, especially in the middle of an investigation!"
 
@@ -439,10 +477,13 @@ You chuckle. The boy is 14, by no standard even close to a "man". You say nothin
 
 title: SearchTheRoom.MillieEntersTheScene
 ---
+<<tune_music MusicPlayer preset quiet>>
+<<set_music MusicPlayer detective_suspense>>
+<<set_sprite Speaker2 MillieDark>>
 Unknown: "Hey doofus!"
 
 The unknown voice startles you and you both recoil back further into the room. A dark silhouette is perched at the window frame, holding the newspaper drapes up with one hand. With a dexterous movement she leaps down into the room. A few seconds pass before Jack finally whispers...
-
+<<set_sprite Speaker2 Millie>>
 Jack: "Millie? What the hell are you doing here! How did you get up!?" he pushes off of the floor flustered.
 
 You compose yourself and are now able to understand what's happening. Millie is a tall, sturdy looking young girl, with straight auburn hair tipped with white dye. Her long pointed nose had always been her distinguishing feature however, only rivalled by her muscular physique.
@@ -464,7 +505,7 @@ Millie: "Oh also, I'm glad you're at least a little bit concerned for Will, give
 Millie: "What, dad's 'training' got the better of you? Couldn't have boys kissing you right? Noooo, that's unacceptable, a proper man runs away from a situation like that." she says, leafing through the textbooks and spots the character sheet and dice. 
 
 Millie: "You know what you should have done? Should have decked him, that'll teach him to mess with you."
-
+<<set_music MusicPlayer none>>
 Jack: "Millie, you know I didn't mean to..."
 
 Millie: "Well it doesn't matter now does it!?" she exclaims. "He's gone because of you and your asshole friend here." she turns to you. "Had to run off and be a good little boy, tell coach and the principal" she says it mockingly, impersonating a baby.
@@ -486,16 +527,24 @@ Jack: "I didn't know what to say to him!? How to react! He KISSED me!"
 Millie: "Big whoop he kissed you! UGH you're such a little brat, brother. I feel like giving you something else to kiss, send you into hiding again!" she shakes a fist at him, visibly frustrated. "And to answer your question from before, no he didn't get enlisted. That requires permission from both guardians. Mrs. Johns and her husband are separated but not divorced, she can't have that, the good christian lady."
 
 Millie: "His dad came back into town, but he..."
-
+<<set_music MusicPlayer detective_suspense>>
+<<play_sfx MusicPlayer light_switch>>
+<<tune_music MusicPlayer preset default>>
 Suddenly a flash of light blinds you, streaming through the door of the room, left slightly ajar. In the heat of the debate, none of you realized how loud you'd gotten.
-
+<<set_sprite Speaker3 BethanyDark>>
 Bethany: "Who's up there!!! William!?"
-
+<<set_sprite Speaker2 none>>
 You have only a split second to react before both Millie and Jack make a break for the window. The girl jumps out first without even grabbing the ladder, while Jack mounts the window frame, then looks back and yells at you. 
 
 Jack: "Come on we've got to get out of here!" then proceeds to follow Millie in jumping out of the window.
-
-You dash towards the frame and jump onto the parapet. As you turn to mount the steps of the ladder that Millie put up, you see a dark figure enter the room you were just in and a loud scream pierces your ears. You slide down the ladder and it crashes over from the steps into the garden below. Following Jack, you dash through the yard and leap over the green fence with two quick movements. You notice the rain has stopped, and the vague light of the sun is beginning to stream from the horizon, obscuring the stars.
+<<set_sprite Speaker1 none>>
+You dash towards the frame and jump onto the parapet. 
+<<set_sprite Speaker3 none>>
+<<set_sprite Speaker2 Bethany>>
+<<play_sfx MusicPlayer screaming>>
+As you turn to mount the steps of the ladder that Millie put up, you see Will's mother enter the room you were just in and a loud scream pierces your ears. You slide down the ladder and it crashes over from the steps into the garden below. 
+<<set_sprite Speaker2 none>>
+Following Jack, you dash through the yard and leap over the green fence with two quick movements. You notice the rain has stopped, and the vague light of the sun is beginning to stream from the horizon, obscuring the stars.
 
 You sprint for a long while before the boy before you starts slowing down. You're well out of the way and the woman couldn't have followed you all the way here. You stop and take a breather, only now noticing how out of breath and exhausted you both are. You look around. Millie is nowhere to be seen. You look back to Jack, who doubled over and panting heavily.
 

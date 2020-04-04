@@ -34,13 +34,13 @@ public class UiSpriteSwitcher : MonoBehaviour
             var color = _targetImage.color;
 
             _currentImage.color = Color.Lerp(Color.clear, _currentImage.sprite ? Color.white : Color.clear, 1 - (timer / TRANSITION_TIME));
-            _targetImage.color = Color.Lerp(Color.clear, Color.white, timer / TRANSITION_TIME);
+            _targetImage.color = Color.Lerp(Color.clear, _targetImage.sprite ? Color.white : Color.clear, timer / TRANSITION_TIME);
 
             yield return new WaitForEndOfFrame();
         }
 
         _currentImage.sprite = _targetImage.sprite;
         _targetImage.color = Color.clear;
-        _currentImage.color = Color.white;
+        _currentImage.color = _currentImage.sprite ? Color.white : Color.clear;
     }
 }
